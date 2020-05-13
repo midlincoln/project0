@@ -1,0 +1,398 @@
+
+
+
+
+
+
+
+	
+
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>OgWrestlingSystem</title>
+<meta charset="UTF-8" />
+<base href="http://www.ogwrestlingsystem.com/" target="_blank">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
+
+
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="css/ie.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link href='css/variables.css' rel='stylesheet' type='text/css' />
+ <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+
+
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+<script type="text/javascript" src="js/owl.carousel.js" ></script>
+ <style>
+            .row > div {
+                padding: 40px;
+                          }
+        </style>
+<!--slider-main-start-->
+<link type="text/css" href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	  var slider= $('.slidermain').bxSlider({auto:true});	  
+	  $(".bx-controls-direction a").click(function () {          
+            slider.stopAuto();
+            slider.startAuto();
+		});
+	});		
+</script>
+<!--slider-main-start-->
+<script type="text/javascript">
+	 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+	$('.owl-carousel-videos').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+});
+</script>
+<!-- responsive menu -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu').click(function(){
+			$('body').toggleClass('show-menu');
+		});
+		$('.close-button').click(function(){
+			$('body').removeClass('show-menu');
+		});
+		
+	});
+</script>
+<!-- responsive menu end -->
+<!-- sticky -->
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var heighthead=$('.header_top').height();
+	if (scroll >= heighthead ) {
+        $("body").addClass("sticky", 1000);
+    }
+    else {
+		$("body").removeClass("sticky", 1000);
+	}
+})
+</script>
+<!-- sticky end -->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".fancybox").fancybox({
+			transitionIn:"fade",
+			transitionOut:"fade",
+		});
+	});
+</script>
+</head>
+<body class="home_page">
+	<!-- responsive menu -->
+	<div class="side-menu">
+		<div class="close-button">
+			Close
+			<i class="fa fa-times"></i>
+		</div>
+		<ul>
+				<li><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li id="active"><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+		</ul>
+	</div>
+	<!-- responsive menu end -->
+	<div id="wrapper">
+		<!--header -->
+			<header id="header" class="clearHeader">
+				<div class="header_top">
+					<div class="container clr">
+						<div class="head_left">
+							<div class="logo">
+								<a href="http://www.ogwrestlingsystem.com/">
+									<img src="images/logo.png" height="216" width="248" alt="logo"/>
+								</a>
+							</div>
+						</div>
+						<div class="head_right clr">
+							<div class="social_link">
+								<ul>
+									<li class="facebook">
+										<a target="_blank" href="https://www.facebook.com/OGWrestlingSystem-1558178384412614/"><i class="fa fa-facebook"></i></a>
+									</li>
+								
+									<li class="youtube">
+										<a target="_blank" href="https://www.youtube.com/channel/UCH440pV2kKWqofQ5xhSqRbw"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="search_form clr">
+								<div class="menu">Menu
+									<div class="menu-trigger">
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+								<div class="header-search" id="header-search-container">
+									<form method="get" action="#" id="search_mini_form">
+										<div class="input-box">
+											<label for="search">Search:</label>
+											<input type="search" placeholder="Search" class="input-text required-entry" value="" id="search">
+											<button class="button search-button" title="Search" type="submit">
+												<span>
+													<span><i class="fa fa-search"></i></span>
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="menu_bar">
+					<div class="container clr">
+						<ul class="menu_inner clr">
+							
+			<li><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li id="active"><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+			
+			
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+		<!--header -->
+		<!--section -->
+			<section id="section">
+					<div class="slider_wapper home_slider">
+						<ul class="slidermain">
+							<li>
+								<img src="images/vw1.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/vw2.JPG"  style="float: left;"  alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/vw3.JPG"  style="float: left;" alt="slider_img" width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/vw4.JPG"  style="float: left;" alt="slider_img" width="1350" height="500" />
+							</li>
+							
+						</ul>
+						<div class="cepation_container">
+							<div class="cen">
+								<div class="gallery-caption">
+									<h2>OGanisian Wrestling System </h2>
+<a name="about"></a>
+									<h3>Virtual Wrestling</h3>
+									
+                                    <p>This part of the website is dedicated to study of virtual wrestling connecting wrestling with mathematics and programming</p>
+
+									
+								
+								</div> 
+							</div>
+						</div>
+					</div>
+					
+					    <div class="row">
+							<div class="col-6">
+								<div class="resent_posts_section">
+								    
+								    
+								    <div class="page_title">
+										<span class="title_inner">
+											<span class="black">Wrestling and Chess</span>
+											<span class="white">Comparison</span>
+										</span>
+									</div>
+									
+								    
+								    
+									
+									<p id="chess">Wrestling is a game like chess. There are a lot of similarities between these two sports one obvious one that it involves playing against an opponent</p>
+									 <p>Yet chess is directly played using inputs from the brain and only requires minimal hand movement, mouse clicks or even just speaking out coordinates of chess moves</p>
+
+                                    <div id="chess">
+                                    <p> Wrestling is different while brain input is the main decision making tool, execution of brain decisions requires dynamics from all of the body</p>
+                                    </div>
+                                    <p>To wrestle one requires to do different moves. Moves include various body movements, wrist grabs, head grips, underhook grips, etc.. And then attacks such as leg attack or attempt at a particular throw. Each attack requires a preparation  a certain sequence of grips, false attempts and etc. Finally if all checkboxes are cleared, one can execute an attack.
+                                    <p id="chess">This is not yet a guarantee of success. Your opponent if he is a skilled wrestler will execute defence. The defence could be at early stage, e.g. He will not let you prepare an attack at the beginning. At later stage of attack it will be harder to execute defence and your chance of success grow. But even at later stages of attack your opponent if he is good, can still defend himself if he knows how. There will be a scramble at the later stages of attack, and you need to win in that scramble. Your chances are high, but you need to be precise.
+                                        In that moment, there is not really too much time to think for both sides. They need to be prepared with their homework. In this sense wrestling is best compared to blitz chess.
+                                    <p>In the table below there is a broad comparison of chess and wrestling:
+
+
+
+
+
+                                    <table   border=""><table ><tr><td style="font-size: 10px">id</td><td style="font-size: 10px">Parameter</td><td style="font-size: 10px">Chess</td><td style="font-size: 10px">wrestling</td></tr><tr><td style="font-size: 10px">1</td><td style="font-size: 10px">Time limit</td><td style="font-size: 10px">5  mins (blitz)</td><td style="font-size: 10px">5 mins</td></tr><tr><td style="font-size: 10px">2</td><td style="font-size: 10px">score</td><td style="font-size: 10px">1 pawn</td><td style="font-size: 10px">A grip with advantage or a leg attack for example</td></tr><tr><td style="font-size: 10px">3</td><td style="font-size: 10px">score</td><td style="font-size: 10px">3 pawns</td><td style="font-size: 10px">1 point</td></tr><tr><td style="font-size: 10px">4</td><td style="font-size: 10px">score</td><td style="font-size: 10px">5 pawns</td><td style="font-size: 10px">3 points</td></tr><tr><td style="font-size: 10px">5</td><td style="font-size: 10px">win</td><td style="font-size: 10px">time runs out</td><td style="font-size: 10px">score difference</td></tr><tr><td style="font-size: 10px">6</td><td style="font-size: 10px">win</td><td style="font-size: 10px">mate</td><td style="font-size: 10px">pin</td></tr><tr><td style="font-size: 10px">7</td><td style="font-size: 10px">win</td><td style="font-size: 10px">giving up</td><td style="font-size: 10px">just big difference in score</td></tr><tr><td style="font-size: 10px">8</td><td style="font-size: 10px">win</td><td style="font-size: 10px">tie</td><td style="font-size: 10px">tie was possible in old rules</td></tr><tr><td style="font-size: 10px">9</td><td style="font-size: 10px">moves</td><td style="font-size: 10px">pawn goes forward</td><td style="font-size: 10px">grab wrist or start attack</td></tr><tr><td style="font-size: 10px">10</td><td style="font-size: 10px">moves</td><td style="font-size: 10px">eat pawn</td><td style="font-size: 10px">grab lag</td></tr><tr><td style="font-size: 10px">11</td><td style="font-size: 10px">moex</td><td style="font-size: 10px">Pawn exchange</td><td style="font-size: 10px">Leg attack and defence</td></tr><tr><td style="font-size: 10px">12</td><td style="font-size: 10px">moves</td><td style="font-size: 10px">Pawn becomes queen</td><td style="font-size: 10px">Attack leg score point and score more points on the bottom?</td></tr></table>                                    
+                              <p><br><br>
+                                    <div class="page_title">
+										<div class="title_inner">
+											<span class="black">Wrestling and Tic-tac-toe </span>
+											<span class="white">Comparison</span>
+										</div>
+									</div>
+									<ol>
+                                    
+                                    <li>You can compare wrestling and Tic-tac-toe. For example every small move in wrestling has a counter move
+                                    <li>You start by grabbing a wrist, your opponent uses a defence, he lets his  wrist out.
+                                    <li>You continue with some other attack and your opponent defends that as well
+                                    <li>So for every move there is a counter move just like in   Tic-tac-toe.
+                                    <li>It all would end in a tie unless someone makes a mistake                                
+                                    </ol>
+                                    <p><br><br>
+                                    
+                                    <div class="page_title">
+										<div class="title_inner">
+											<span class="black">Wrestling and Maze </span>
+											<span class="white">Comparison</span>
+										</div>
+									</div>
+									<ul>
+                                    <li> you can compare wrestling match with a maze too. 
+                                    <li>You can imagine a maze with 2 entries and multiple exists. You enter from one side and your opponent enters from another side. Then you search for an exit while your opponent also does the same. 
+                                    <li>In this comparison you don’t really interact your opponent. But you search for a solution to a maze while every corner and every path that you explore is mapped to some wrestling situation in the match. You sort of think what would happen if you take this path, e.g. use a particular attack sequence, will it lead you to a score? While your opponent also thinks that if he takes a certain path it would lead him to a score.    You the defence moves by your opponent mapped to wall and blind paths ending with nothing, while exists are continued to your successes.
+                                    </ul>
+                                    <p><br><br>
+                                    
+
+
+								
+							
+									
+								</div>
+							</div>	
+						
+
+								
+						<div class="col-6">
+								<div class="latest_news_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Latest </span>
+											<span class="white">News</span>
+										</div>
+									</div>
+
+								
+			<a name="latestn">
+			    
+			
+								<div class="alert alert-success" role="alert">Virtual Wrestling</div>
+										<ul><li><a href="https://tcrf.net/Virtual_Pro-Wrestling_2:_Oudou_Keishou".>Virtual Pro-Wrestling 2: Oudou Keishou - The Cutting Room Floor    https://tcrf.net › Virtual_Pro-Wrestling_2:_Oudou_Keishou   </a><li><a href="https://www.amazon.com/Virtual-Pro-Wrestling-64-Nintendo-Japan/dp/B000069TVJ".>Virtual Pro Wrestling 64 - Nintendo 64 [Japan Import ... - Amazon.com    https://www.amazon.com › Virtual-Pro-Wrestling-64-Nintendo-Japan   </a><li><a href="https://www.retrogamer.net/retro_games00/virtual-pro-wrestling-2-odo-keisho/".>Virtual Pro Wrestling 2: ?d? Keish? | Retro Gamer    https://www.retrogamer.net › retro_games00 › virtual-pro-wrestling-2-odo-...   </a><li><a href="https://prowrestling.fandom.com/wiki/Virtual_Pro_Wrestling".>Virtual Pro Wrestling | Pro Wrestling | Fandom    https://prowrestling.fandom.com › wiki › Virtual_Pro_Wrestling   </a><li><a href="http://vow.plit.dk/".>Virtual Online Wrestling - Free web based wrestling game    vow.plit.dk   </a>
+										</ul>
+									
+								<div class="alert alert-success" role="alert">Wrestling Video Games</div>
+										<ul><li><a href="https://whatculture.com/gaming/10-best-non-wwe-wrestling-video-games-ever".>10 Best Non-WWE Wrestling Video Games Ever - WhatCulture.com    https://whatculture.com › gaming › 10-best-non-wwe-wrestling-video-gam...   </a><li><a href="https://www.pinterest.com/joebond76/wrestling-video-games/".>29 Best Wrestling Video Games | Wrestling videos, Wrestling, Video ...    https://www.pinterest.com › joebond76 › wrestling-video-games   </a><li><a href="https://bleacherreport.com/articles/1828797-7-greatest-wwe-video-games-of-all-time".>7 Greatest WWE Video Games of All Time | Bleacher Report | Latest ...    https://bleacherreport.com › articles › 1828797-7-greatest-wwe-video-gam...   </a><li><a href="https://www.amazon.com/slp/wwe-video-games/osuvjjfgsyem5mu".>WWE Video Games: Amazon.com    https://www.amazon.com › slp › wwe-video-games   </a><li><a href="https://www.denofgeek.com/games/best-wrestling-games/".>20 Best Wrestling Games Ever Made | Den of Geek    https://www.denofgeek.com › Games   </a>
+										</ul>
+									
+								<div class="alert alert-success" role="alert">Virtual Wrestling</div>
+										<ul><li><a href="https://tcrf.net/Virtual_Pro-Wrestling_2:_Oudou_Keishou".>Virtual Pro-Wrestling 2: Oudou Keishou - The Cutting Room Floor    https://tcrf.net › Virtual_Pro-Wrestling_2:_Oudou_Keishou   </a><li><a href="https://www.amazon.com/Virtual-Pro-Wrestling-64-Nintendo-Japan/dp/B000069TVJ".>Virtual Pro Wrestling 64 - Nintendo 64 [Japan Import ... - Amazon.com    https://www.amazon.com › Virtual-Pro-Wrestling-64-Nintendo-Japan   </a><li><a href="https://www.retrogamer.net/retro_games00/virtual-pro-wrestling-2-odo-keisho/".>Virtual Pro Wrestling 2: ?d? Keish? | Retro Gamer    https://www.retrogamer.net › retro_games00 › virtual-pro-wrestling-2-odo-...   </a><li><a href="https://prowrestling.fandom.com/wiki/Virtual_Pro_Wrestling".>Virtual Pro Wrestling | Pro Wrestling | Fandom    https://prowrestling.fandom.com › wiki › Virtual_Pro_Wrestling   </a><li><a href="http://vow.plit.dk/".>Virtual Online Wrestling - Free web based wrestling game    vow.plit.dk   </a>
+										</ul>
+									
+								<div class="alert alert-success" role="alert">Programming Sports Video Games</div>
+										<ul><li><a href="https://www.si.com/extra-mustard/2014/08/21/how-are-commentators-programmed-sports-video-games".>How are commentators programmed into sports video games ...    https://www.si.com › Extra Mustard   </a><li><a href="https://metrica-sports.com/".>Sports Video Analysis at their best - Code, Analyze and Present with ...    https://metrica-sports.com   </a><li><a href="https://www.animationcareerreview.com/articles/sports-game-development-who-does-what-and-why".>Sports Game Development: Who Does What and Why? | Animation ...    https://www.animationcareerreview.com › articles › sports-game-developm...   </a><li><a href="https://www.quora.com/How-do-they-program-the-highly-detailed-commentary-in-sports-games-such-as-FIFA-PES-NBA-2k14-and-NFL".>How do they program the highly detailed commentary in sports ...    https://www.quora.com › How-do-they-program-the-highly-detailed-comm...   </a><li><a href="https://www.forbes.com/sites/bradadgate/2020/04/21/esports-is-filling-the-programming-void/".>Esports Is Filling The Programming Void - Forbes    https://www.forbes.com › sites › bradadgate › 2020/04/21 › esports-is-fillin...   </a>
+										</ul>
+									
+								<div class="alert alert-success" role="alert">Artificial Intelegence in Sports</div>
+										<ul><li><a href="http://almostism.com/ai-changing-the-world-of-sports/".>9 ways AI is changing the world of sports - Technology services news    almostism.com › ai-changing-the-world-of-sports   </a><li><a href="https://www.sporttechie.com/artificial-intelligence-plays-future-sports-technology/".>How Artificial Intelligence Plays Into The Future Of Sports Technology    https://www.sporttechie.com › artificial-intelligence-plays-future-sports-tec...   </a><li><a href="https://towardsdatascience.com/ai-augmented-sports-revolution-5c0727ba7004".>AI Augmented Sports Revolution - Towards Data Science    https://towardsdatascience.com › ai-augmented-sports-revolution-5c0727ba...   </a><li><a href="https://www.technogym.com/int/newsroom/future-sport/".>Artificial Intelligence and its application in modern sports - Technogym    https://www.technogym.com › int › newsroom › future-sport   </a><li><a href="https://www.pwc.com.au/industry/sports/artificial-intelligence-application-to-the-sports-industry.pdf".>[PDF] Artificial Intelligence - Application to the Sports ... - PwC Australia    https://www.pwc.com.au › industry › artificial-intelligence-application-to-t...   </a>
+										</ul>
+									
+								<div class="alert alert-success" role="alert">Imaginary Sports</div>
+										<ul><li><a href="http://www-personal.k-state.edu/~heger/ffl/index.html".>Martin Heger's Fanatasy Football Stats Page - Kansas State University    www-personal.k-state.edu › ~heger › ffl   </a><li><a href="https://www.thesportscol.com/2015/05/phil-stone-imaginary-sports-hero-who-was-yours/".>Phil Stone, Imaginary Sports Hero: Who Was Yours? - The Sports ...    https://www.thesportscol.com › 2015/05 › phil-stone-imaginary-sports-her...   </a><li><a href="https://twitter.com/imaginarysportz".>Imaginary Sports (@imaginarysportz) | Twitter    https://twitter.com › imaginarysportz   </a><li><a href="https://www.topendsports.com/sport/new/list.htm".>New and Unique Sports List - Topend Sports    https://www.topendsports.com › sport › new › list   </a><li><a href="https://witneyman.wordpress.com/2010/11/18/the-top-10-imaginary-sports/".>The Top-10 Imaginary Sports | Three Cheers for Darkened Years!    https://witneyman.wordpress.com › 2010/11/18 › the-top-10-imaginary-sp...   </a>
+										</ul>
+												
+
+				</div>
+							<div class="clear"></div>
+						</div>
+						</div>
+						
+				
+			</section>
+		<!--section -->
+		<!--footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<div class="container">
+						<p>Copyright 2020 <a href="http://www.ogwrestlingsystem.com/">OG Wrestling System.</a> Some Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+		<!--footer -->
+			
+	</div>
+</body>
+
+
+</html>
+
+
+
+

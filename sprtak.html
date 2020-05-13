@@ -1,0 +1,785 @@
+
+
+
+
+
+
+
+
+	
+
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>OgWrestlingSystem</title>
+<meta charset="UTF-8" />
+<base href="http://www.ogwrestlingsystem.com/" target="_blank">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="css/ie.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+<script type="text/javascript" src="js/owl.carousel.js" ></script>
+<style>
+div li {
+	list-style: outside none none;
+}
+ol, ul { list-style: none;}
+</style>
+<!--slider-main-start-->
+<link type="text/css" href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	  var slider= $('.slidermain').bxSlider({auto:true});	  
+	  $(".bx-controls-direction a").click(function () {          
+            slider.stopAuto();
+            slider.startAuto();
+		});
+	});		
+</script>
+<!--slider-main-start-->
+<script type="text/javascript">
+	 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+	$('.owl-carousel-videos').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+});
+</script>
+<!-- responsive menu -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu').click(function(){
+			$('body').toggleClass('show-menu');
+		});
+		$('.close-button').click(function(){
+			$('body').removeClass('show-menu');
+		});
+		
+	});
+</script>
+<!-- responsive menu end -->
+<!-- sticky -->
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var heighthead=$('.header_top').height();
+	if (scroll >= heighthead ) {
+        $("body").addClass("sticky", 1000);
+    }
+    else {
+		$("body").removeClass("sticky", 1000);
+	}
+})
+</script>
+<!-- sticky end -->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".fancybox").fancybox({
+			transitionIn:"fade",
+			transitionOut:"fade",
+		});
+	});
+</script>
+</head>
+<body class="home_page">
+	<!-- responsive menu -->
+	<div class="side-menu">
+		<div class="close-button">
+			Close
+			<i class="fa fa-times"></i>
+		</div>
+		<ul>
+			<li ><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li class="active"><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+
+		</ul>
+	</div>
+	<!-- responsive menu end -->
+	<div id="wrapper">
+		<!--header -->
+			<header id="header" class="clearHeader">
+				<div class="header_top">
+					<div class="container clr">
+						<div class="head_left">
+							<div class="logo">
+								<a href="http://www.ogwrestlingsystem.com/">
+									<img src="images/logo.png" height="216" width="248" alt="logo"/>
+								</a>
+							</div>
+						</div>
+						<div class="head_right clr">
+							<div class="social_link">
+								<ul>
+									<li class="facebook">
+										<a target="_blank" href="https://www.facebook.com/OGWrestlingSystem-1558178384412614/"><i class="fa fa-facebook"></i></a>
+									</li>
+								
+									<li class="youtube">
+										<a target="_blank" href="https://www.youtube.com/channel/UCH440pV2kKWqofQ5xhSqRbw"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="search_form clr">
+								<div class="menu">Menu
+									<div class="menu-trigger">
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+								<div class="header-search" id="header-search-container">
+									<form method="get" action="#" id="search_mini_form">
+										<div class="input-box">
+											<label for="search">Search:</label>
+											<input type="search" placeholder="Search" class="input-text required-entry" value="" id="search">
+											<button class="button search-button" title="Search" type="submit">
+												<span>
+													<span><i class="fa fa-search"></i></span>
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="menu_bar">
+					<div class="container clr">
+						<ul class="menu_inner clr">
+							
+			<li ><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li class="active"><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+		<!--header -->
+		<!--section -->
+			<section id="section">
+					<div class="slider_wapper home_slider">
+						<ul class="slidermain">
+							<li>
+								<img src="images/spmain1.jpg" style="float: left;"  alt="slider_img" height="400"  />
+							</li>
+							<li>
+								<img src="images/spmain2.jpg" style="float: left;"  alt="slider_img" height="400" />
+							</li>
+							<li>
+								<img src="images/spmain3.jpg" style="float: left;"  alt="slider_img" height="400"  />
+							</li>
+
+<li>
+								<img src="images/gav2.jpg" style="float: left;"  alt="slider_img" width="1100"  />
+							</li>
+
+
+
+						</ul>
+						<div class="cepation_container">
+							<div class="cen">
+								<div class="gallery-caption">
+									<h2>OGanisian Wrestling System </h2>
+                                    <a name="about"></a>
+
+									
+									<h3>Spartak Baumanskaia</h3>
+									<p>is a legacy wrestling club in Moscow, and closed now. It was an alma mater to a flock of premium wrestlers and friends</p>
+									<p>Both Sanasar Oganisian and Ovanes Oganisian are former Spartak wrestlers  </p>
+									<p>This part of the website is dedicated to very  old  and precious friends and coaches </p>
+									
+									
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="main_container">
+						<div class="container clr">
+							<div class="page_col_main">
+								<div class="resent_posts_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Recent </span>
+											<span class="white">Posts</span>
+										</div>
+									</div>
+									<div class="owl-carousel resent_carousel">
+										
+										
+										
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/2892379224174540/" target="_blank"><img src="images/scissors.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/2892379224174540/">Cessors</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2016</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Defensive techqnique when your leg was attacked </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/1100669106978293/" target="_blank"><img src="images/firemanc.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/1100669106978293/">Fireman's carry by Andrey, the real master of the fireman's carry</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2016</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>This is  very relaxed version </p>
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
+									<a name="recentn"></a>
+									<div class="resent_user_section clr">
+										<div class="resent_user_blocks clr">
+											
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/2892379224174540/"  target="_blank"><img src="images/scissors.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/2892379224174540/"  target="_blank">Cessors</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">My  13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Defensive techqnique when your leg was attacked </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/1100669106978293/"  target="_blank"><img src="images/firemanc.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/1100669106978293/"  target="_blank">Fireman's carry by Andrey, the real master of the fireman's carry</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">My  13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>This is  very relaxed version </p>
+													</div>
+												</div>
+											</div>
+
+
+											
+											
+										</div>
+										<div class="view_all">
+
+
+											<a class="view_all_btn" href="#">View All</a>
+										</div>
+									</div>
+								</div>
+
+									<a name="recentv">
+								<div class="videos_archive_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Videos </span>
+											<span class="white">Archive</span>
+										</div>
+									</div>
+									
+		
+			
+			
+									<div class="owl-carousel-videos videos_carousel">
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/RyRxnI5bp9w"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/RyRxnI5bp9w">Yury Shahmuradov Excellent Technique Video</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow... ...  Part 1</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/MCyNF5hdoyc"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/MCyNF5hdoyc">Yury Shahmuradov Excellent Technique Video Part 2</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow...... Part 2  </p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/SlvgAev9gC8"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/SlvgAev9gC8">Yury Shahmuradov Excellent Technique Video Part 3</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow..and also bits og 1981 USSR Championships in Yakutsk with Sanasar, Gurgen in the clip.... Part 3 </p>
+											</div>
+										</div>
+										
+									</div>
+									<div class="videos_archive_bottom clr">
+										<div class="videos_archive_blocks clr">
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/GWk3peSG5qU">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_1.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Ahmed Atavov, WC Trials</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/G9ypoX8Y5cQ">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_2.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Trost</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/hilZDBWgr_w">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_3.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Jim Scherr</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/z7iY2RFjcqU">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_4.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Bill Scherr</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://www.flowrestling.org/video/5155042-sanasar-oganesyan-v-howard-harris-1981-world-cup">
+													<div class="archive_videos">
+														<img src="images/sanharris.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">1981 Sanasar Oganesian vs.  Howard Harris</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://www.facebook.com/molsport.alania/videos/1287598811371901/UzpfSTEwMDAwNTM3ODQ5OTM0OToxMzQ0MDAwOTcyNDU1ODQw/?id=100005378499349">
+													<div class="archive_videos">
+														<img src="images/sannaniev.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">A little bit of Sanasar Crazy Attack and Scramble with Peter Naniev in 1983 in this excellent video dedicated to great coatch Batia</div>
+												</a>
+											</div>
+										
+												<div class="videos_archive_block">
+												<a href="https://www.youtube.com/watch?v=znzuhwEonEw&t=6s">
+													<div class="archive_videos">
+														<img src="images/vmaloc.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Ovanes Oganisian vs. Dave Malecek 1992 190 lbs</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="	https://youtu.be/6TUgX95Qi7o">
+													<div class="archive_videos">
+														<img src="images/vmccoy.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Ovanes Oganisian vs.Kerry McCoy 1993 190 lbs National Duals</div>
+												</a>
+											</div>
+										</div>
+										<div class="view_all">
+											<a class="view_all_btn" href="#">View All</a>
+										</div>
+									</div>
+								</div>
+								<div class="photo_archive_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Photo </span>
+											<span class="white">Archive</span>
+										</div>
+									</div>
+									<div class="photo_archive_group">
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/spmain12.jpg" title="Korchuganov, Mashkov, Isaev, Tsaraev">
+													<img src="images/spmain12.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Korchuganov, Mashkov, Isaev, Tsaraev</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/spmain13.jpg" title="Tsaraev">
+													<img src="images/spmain13.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Tsaraev</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/spmain14.jpg" title="Football – another Spartak skill">
+													<img src="images/spmain14.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Football – another Spartak skill</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/sp1.jpg" title="Navretdinov is toasting">
+													<img src="images/sp1.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Navretdinov is toasting</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_12">
+												<a class="fancybox" rel="group" href="images/sp2.jpg" title="Long toast">
+													<img src="images/sp2.jpg" alt="photo_archive" width="785" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Long toast</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									
+										<div class="photo_archive_group">
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/sp3.jpg" title="Still toasting">
+													<img src="images/sp3.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Still toasting</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/sp4.jpg" title="Avdeev, Mashkov, Korchuganov, Isaev">
+													<img src="images/sp4.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Avdeev, Mashkov, Korchuganov, Isaevn</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/sp6.jpg" title="Tsaraev, Fomin and Maximchenko">
+													<img src="images/sp6.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Tsaraev, Fomin and Maximchenko</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/sp7.jpg" title="Tsaraev, Fomin, Oganisian and Maximchenko">
+													<img src="images/sp7.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Tsaraev, Fomin, Oganisian and Maximchenko</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_12">
+												<a class="fancybox" rel="group" href="images/sp9.jpg" title="Tsaraev – the head coach of Spartak – still a leader">
+													<img src="images/sp9.jpg" alt="photo_archive" width="785" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Tsaraev – the head coach of Spartak – still a leader</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									
+										<div class="photo_archive_group">
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/sp10.jpg" title="A test for being a good wrestler is how you play football and chess wrestling comes 3rd">
+													<img src="images/sp10.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">A test for being a good wrestler is how you play football and chess wrestling comes 3rd</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/sp11.jpg" title="Communion">
+													<img src="images/sp11.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Communion</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/sp12.jpg" title="After practice dinner is a long tradition">
+													<img src="images/sp12.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">After practice dinner is a long tradition</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/sp13.jpg" title="Visiting SiberiaIsaev and Ruban">
+													<img src="images/sp13.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Isaev and Ruban</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_12">
+												<a class="fancybox" rel="group" href="images/sp14.jpg" title="Bespalov is the guy with glasses">
+													<img src="images/sp14.jpg" alt="photo_archive" width="785" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Bespalov is the guy with glasses</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="view_all">
+										<a class="view_all_btn" href="#">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar">
+								<div class="latest_news_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Latest </span>
+											<span class="white">News</span>
+										</div>
+									</div>
+
+								
+			<a name="latestn">
+			
+
+
+								<div class="insidebar_block">
+										<a name="Baumanskaya Historic District"><div class="sidebar_title">Baumanskaya Historic District</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.themoscowtimes.com/2017/05/13/double-dutch-a57985" target="_blank">Moscow Double Dutch Love brought businessman Erik Jansma to ...    The Moscow Times   </a><li><a href="https://www.theguardian.com/cities/2014/dec/12/moscow-hipster-stalinism-gentrification-artkvartal-zaryadye-park" target="_blank">Moscow embraces 'hipster Stalinism'    The Guardian   </a><li><a href="https://en.wikipedia.org/wiki/Basmanny_District" target="_blank">Basmanny District - Wikipedia    https://en.wikipedia.org › wiki › Basmanny_District   </a><li><a href="https://en.wikipedia.org/wiki/Basmanny_District%23History_and_architecture" target="_blank">History and architecture</a><li><a href="https://en.wikipedia.org/wiki/Basmanny_District%23References" target="_blank">References</a><li><a href="https://www.tripadvisor.com/AttractionsNear-g298484-d4574656-Baumanskaya_Station-Moscow_Central_Russia.html" target="_blank">THE 10 BEST Things to Do Near Baumanskaya Station, Moscow    https://www.tripadvisor.com › ... › Moscow › Things to Do in Moscow   </a><li><a href="https://www.tripadvisor.com/ShowUserReviews-g298484-d5539789-r261039559-Mercure_Moscow_Baumanskaya-Moscow_Central_Russia.html" target="_blank">Mercure Baumanskaya - Review of Mercure Moscow Baumanskaya ...    https://www.tripadvisor.com › ... › Mercure Moscow Baumanskaya   </a><li><a href="https://www.booking.com/landmark/ru/baumanskaya.html" target="_blank">The 10 best hotels near Baumanskaya Metro Station in Moscow ...    https://www.booking.com › Hotels in Russia › Hotels in Moscow   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Moscow Sprtak Starostin Legacy"><div class="sidebar_title">Moscow Sprtak Starostin Legacy</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.nytimes.com/2018/07/06/sports/world-cup/russia-yashin-starostin.html" target="_blank">In Russia’s Archives, a Soccer History Cloaked in Contradictions    New York Times   </a><li><a href="https://thesefootballtimes.co/2019/10/07/the-prince-of-vigo-aleksandr-mostovois-sojourn-at-celta/" target="_blank">The prince of Vigo: Aleksandr Mostovoi and the glorious Celta years    These Football Times   </a><li><a href="https://www.telegraph.co.uk/men/thinking-man/hidden-story-behind-one-russias-famous-stadiums/" target="_blank">The hidden story behind one of Russia’s most famous stadiums    Telegraph.co.uk   </a><li><a href="https://thesefootballtimes.co/2016/06/15/andrey-arshavin-a-contradictory-russian-talent/" target="_blank">Andrey Arshavin: a contradictory Russian talent    These Football Times (blog)   </a><li><a href="https://www.ilawjournals.com/the-strangler-of-millions-why-so-called-vyacheslav-molotov/" target="_blank">"The Strangler of millions": why so called Vyacheslav Molotov    International Law Lawyer News   </a><li><a href="http://russianfootballnews.com/nikolai-starostin-from-hero-to-gulag-and-back-again/" target="_blank">Nikolai Starostin: From Hero to Gulag and Back Again - Russian ...    russianfootballnews.com › nikolai-starostin-from-hero-to-gulag-and-back-a...   </a><li><a href="http://russianfootballnews.com/nikolai-starostin-my-football-years-chapter-1/" target="_blank">Nikolai Starostin: My Football Years (Chapter 1) - A Hint to the ...    russianfootballnews.com › nikolai-starostin-my-football-years-chapter-1   </a><li><a href="https://www.degruyter.com/view/title/527106%3Flanguage%3Den" target="_blank">Spartak Moscow – A History of the People's Team in the Workers ...    https://www.degruyter.com › view › title   </a><li><a href="https://www.amazon.com/Spartak-Moscow-History-Peoples-Workers/dp/0801478391" target="_blank">Spartak Moscow: A History of the People's Team in the Workers ...    https://www.amazon.com › Spartak-Moscow-History-Peoples-Workers   </a><li><a href="https://www.amazon.com/Spartak-Moscow-History-Peoples-Workers-ebook/dp/B009MBTS8I" target="_blank">Spartak Moscow: A History of the People's Team in ... - Amazon.com    https://www.amazon.com › Spartak-Moscow-History-Peoples-Workers-ebo...   </a><li><a href="https://www.nytimes.com/2018/07/06/sports/world-cup/russia-yashin-starostin.html" target="_blank">In Russia's Archives, a Soccer History Cloaked in Contradictions ...    https://www.nytimes.com › sports › world-cup › russia-yashin-starostin   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Moscow Wrestling"><div class="sidebar_title">Moscow Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://olympics.nbcsports.com/2020/05/08/henry-cejudo-ufc-249-olympic-gold-medal-wrestling/" target="_blank">Henry Cejudo lost his Olympic gold medal in a fire; then what happened?    OlympicTalk (blog)   </a><li><a href="https://www.spokesman.com/stories/2020/apr/26/north-idaho-athletic-hall-of-fame-announces-58th-a/" target="_blank">North Idaho Athletic Hall of Fame announces 58th annual high school and college awards    The Spokesman-Review   </a><li><a href="https://www.judoinside.com/news/3989/Judo_in_the_time_of_Covid_19_Yeldos_Smetov" target="_blank">Judo in the time of Covid-19: Yeldos Smetov    Judo Inside   </a><li><a href="https://www.essentiallysports.com/ufc-news-reports-khabib-nurmagomedov-hit-by-family-problems-as-father-gets-hospitalized-again/" target="_blank">Khabib Nurmagomedov Hit by Family Problems as Father Gets Hospitalized Again    Essentially Sports (blog)   </a><li><a href="https://www.si.com/wrestling/2020/04/19/independent-wrestling-coronavirus-shutdown" target="_blank">Coronavirus Shutdown Leaves Independent Wrestlers Struggling to Make a Living—and Find Purpose    Sports Illustrated   </a><li><a href="https://www.startribune.com/south-korea-reports-more-virus-cases-us-job-losses-surge/570332702/" target="_blank">Reopenings bring new cases in S. Korea, virus fears in Italy    Minneapolis Star Tribune   </a><li><a href="https://www.moscowwrestling.com/" target="_blank">Moscow Wrestling Club    https://www.moscowwrestling.com   </a><li><a href="https://www.moscowwrestling.com/page/show/3722649-calendar" target="_blank">Calendar - Moscow Wrestling Club    https://www.moscowwrestling.com › page › show › 3722649-calendar   </a><li><a href="https://www.facebook.com/MoscowBearsWrestling/" target="_blank">Moscow Bears Wrestling - Home | Facebook    https://www.facebook.com › ... › Sports Team › School Sports Team   </a><li><a href="https://www.facebook.com/moscowwrestling/" target="_blank">Moscow Wrestling Club - Home | Facebook    https://www.facebook.com › moscowwrestling   </a><li><a href="https://www.maxpreps.com/high-schools/moscow-bears-(moscow,id)/wrestling/home.htm" target="_blank">Moscow High School (ID) Wrestling | MaxPreps    https://www.maxpreps.com › ID Wrestling   </a><li><a href="https://unitedworldwrestling.org/event/grand-prix-moscow-alrosa" target="_blank">Grand Prix Moscow Alrosa | United World Wrestling    https://unitedworldwrestling.org › event › grand-prix-moscow-alrosa   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Gilyarovsky Moscow"><div class="sidebar_title">Gilyarovsky Moscow</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.themoscowtimes.com/2020/02/20/russia-represented-at-berlin-film-festival-a69378" target="_blank">Russia Represented at Berlin Film Festival    The Moscow Times   </a><li><a href="https://www.themoscowtimes.com/2020/02/11/on-this-day-moscow-does-not-believe-in-tears-released-a69240" target="_blank">On This Day in 1980, 'Moscow Does Not Believe in Tears' Was Released    The Moscow Times   </a><li><a href="https://www.themoscowtimes.com/2019/08/08/tarantino-shocked-by-moscow-in-first-visit-to-russia-since-2004-a66757" target="_blank">Tarantino 'Shocked By Moscow' in First Visit to Russia Since 2004    The Moscow Times   </a><li><a href="https://www.themoscowtimes.com/2020/01/07/subscity-movies-in-original-language-a68819" target="_blank">Subscity – Movies In Original Language    The Moscow Times   </a><li><a href="https://www.themoscowtimes.com/2020/02/05/peasant-breaks-russian-box-office-a69171" target="_blank">“Peasant” Breaks Russian Box Office    The Moscow Times   </a><li><a href="https://www.themoscowtimes.com/2017/12/08/moscow-gets-a-new-museum-a59872" target="_blank">Moscow Gets a New Museum    The Moscow Times   </a><li><a href="https://en.wikipedia.org/wiki/Vladimir_Gilyarovsky" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Vladimir_Gilyarovsky" target="_blank">Vladimir Gilyarovsky - Wikipedia    https://en.wikipedia.org › wiki › Vladimir_Gilyarovsky   </a><li><a href="https://www.amazon.com/Moscow-Muscovites-Vladimir-Gilyarovsky-ebook/dp/B00GWMVK2W" target="_blank">Moscow and Muscovites eBook: Gilyarovsky, Vladimir ... - Amazon.com    https://www.amazon.com › Moscow-Muscovites-Vladimir-Gilyarovsky-ebo...   </a><li><a href="https://www.rbth.com/arts/328051-5-reasons-visit-gilyarovsky-center-moscow" target="_blank">5 reasons to visit Moscow's new Gilyarovsky Center museum ...    https://www.rbth.com › arts › 328051-5-reasons-visit-gilyarovsky-center-m...   </a><li><a href="https://www.bookdepository.com/Moscow-Muscovites-Vladimir-Gilyarovsky/9781880100820" target="_blank">Moscow and Muscovites : Vladimir Gilyarovsky : 9781880100820    https://www.bookdepository.com › Moscow-Muscovites-Vladimir-Gilyarov...   </a><li><a href="https://www.tripadvisor.com/Restaurant_Review-g298484-d7106426-Reviews-Cafe_Bar_Gilyarovsky-Moscow_Central_Russia.html" target="_blank">Cafe-Bar Gilyarovsky, Moscow - Boulevard Ring - Restaurant ...    https://www.tripadvisor.com › ... › Moscow › Moscow Restaurants   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Athletes keeping in touch with old teammates"><div class="sidebar_title">Athletes keeping in touch with old teammates</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.bdemo.com/sports/shock-to-the-system-virus-shakes-up-college-athletics/article_e0107b24-946c-11ea-bbda-e3cbe79f538a.html" target="_blank">'Shock to the system': Virus shakes up college athletics    bdemo.com   </a><li><a href="https://www.salisburypost.com/2020/05/12/swimming-ymca-earns-safe-sport-recognition/" target="_blank">Swimming: YMCA earns Safe Sport recognition - Salisbury Post    Salisbury Post   </a><li><a href="https://www.insidehook.com/article/sports/why-havent-athletes-slammed-door-locker-room-talk" target="_blank">When Will Pro Athletes Slam the Door on "Locker Room Talk"?    InsideHook   </a><li><a href="https://gopsusports.com/news/2020/4/20/student-athlete-check-in-brandon-meredith-penn-state-wrestling.aspx" target="_blank">Student-Athlete Check In: Brandon Meredith – Penn State Wrestling    GoPSUsports.com   </a><li><a href="https://www.chicagotribune.com/coronavirus/ct-covid-high-school-sports-cancel-20200417-3nw3sl6ssvettaswwf667mfxwa-story.html" target="_blank">High school athletes keep hope alive even as COVID-19 threatens to cancel season    Chicago Tribune   </a><li><a href="https://msuspartans.com/news/2020/5/12/general-spartan-spotlight.aspx" target="_blank">Spartan Spotlight    Michigan State Athletics   </a><li><a href="https://williamsrecord.com/2020/04/eph-athletes-remain-in-touch-with-teammates-stay-in-shape-despite-cancellations/" target="_blank">Eph athletes remain in touch with teammates, stay in shape despite ...    https://williamsrecord.com › 2020/04 › eph-athletes-remain-in-touch-with-t...   </a><li><a href="https://www.tdn-net.com/sports/81910/staying-connected-through-gaming-online-video-games-keep-local-athletes-in-touch-with-teammmates" target="_blank">Staying connected through gaming: Online video games keep local ...    https://www.tdn-net.com › sports › staying-connected-through-gaming-onli...   </a><li><a href="https://www.usab.com/news-events/news/2020/04/truesport-quarantine-tips.aspx" target="_blank">Keeping Kids Active and Healthy During Quarantine - USA Basketball    https://www.usab.com › news › 2020/04 › truesport-quarantine-tips   </a><li><a href="http://learn.truesport.org/6-ways-youth-athletes-keep-each-other-accountable/" target="_blank">6 Ways Youth Athletes Can Keep Each Other Accountable to the Team    learn.truesport.org › 6-ways-youth-athletes-keep-each-other-accountable   </a><li><a href="https://appliedsportpsych.org/blog/2020/03/the-covid-19-pandemic-tips-for-athletes-coaches-parents-and-the-sport-community/" target="_blank">The COVID-19 Pandemic: Tips for Athletes, Coaches, Parents, and ...    https://appliedsportpsych.org › blog › 2020/03 › the-covid-19-pandemic-ti...   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Athletes and friendship"><div class="sidebar_title">Athletes and friendship</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.ocolly.com/sports/the-power-of-connections-friendships-among-student-athletes-play-key-role-in-recruiting/article_197daf06-8b32-11ea-bde9-8f97c51dbe2e.html" target="_blank">The power of connections: friendships among student-athletes play ...    Daily O'Collegian   </a><li><a href="https://www.milforddailynews.com/sports/20200509/plymouth-50-for-50-theresa-smith-went-above-and-beyond-for-athletes-in-town" target="_blank">PLYMOUTH 50-for-50: Theresa Smith went above and beyond for athletes in town    Milford Daily News   </a><li><a href="https://www.onlineathens.com/sports/20200512/born-uga-fans-now-committed-to-play-football-at-virginia-two-athens-area-standouts-swap-loyalties" target="_blank">Born UGA fans, now committed to play football at Virginia: Two Athens-area standouts swap loyalties    Online Athens   </a><li><a href="https://www.enterprisenews.com/sports/20200511/for-doyle-brothers-family-business-is-coaching" target="_blank">For Doyle brothers, the family business is coaching    Enterprise News   </a><li><a href="https://gargoyle.flagler.edu/2020/04/an-athlete-with-cerebral-palsy-hopes-his-athletic-journey-will-encourage-others-with-cp-to-try-sports/" target="_blank">An athlete with cerebral palsy hopes his athletic journey will ...    Flagler College Gargoyle   </a><li><a href="https://robbreport.com/shelter/art-collectibles/dwight-manley-coin-collector-dennis-rodman-agent-2917861/" target="_blank">Meet the World-Renowned Coin Collector Who Happened to Be Dennis Rodman’s Agent in the ’90s    Robb Report   </a><li><a href="https://bleacherreport.com/articles/2574125-13-times-athletes-gave-us-friendship-goals" target="_blank">13 Times Athletes Gave Us Friendship Goals | Bleacher Report ...    https://bleacherreport.com › articles › 2574125-13-times-athletes-gave-us-f...   </a><li><a href="https://www.stack.com/a/5-best-pro-athlete-friendships" target="_blank">The Top 5 Best Athlete Friendships In Pro Sports | STACK    https://www.stack.com › Motivation › Sports Psych   </a><li><a href="https://www.stack.com/a/5-best-pro-athlete-friendships" target="_blank">  &nbsp;&nbsp;VIDEO</a><li><a href="https://www.baltimoresun.com/maryland/carroll/sports/cc-sp-brown-column-102917-story.html" target="_blank">Sports are great way to form friendship bonds - Carroll County Times    https://www.baltimoresun.com › sports › cc-sp-brown-column-102917-story   </a><li><a href="https://athletesinaction.org/underreview/what-about-your-friends-why-teammate-relationships-matter" target="_blank">What About Your Friends?: Why Teammate ... - Athletes in Action    https://athletesinaction.org › underreview › what-about-your-friends-why-t...   </a><li><a href="https://www.thesportster.com/entertainment/top-25-real-life-friendships-in-sports/" target="_blank">Top 25 Real Life Friendships in Sports | TheSportster    https://www.thesportster.com › entertainment › top-25-real-life-friendships-...   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Supporting retired coaches"><div class="sidebar_title">Supporting retired coaches</div></a>
+										<ul class="sidbar_ul"><li><a href="http://wakeweekly.com/stories/after-28-years-at-the-helm-pegram-announces-retirement-at-beddingfield,207768" target="_blank">After 28 years at the helm, Pegram announces retirement at ...    Wakeweekly   </a><li><a href="https://www.agjournalonline.com/sports/20200511/packs-sanchez-retires-after-26-years-at-helm" target="_blank">Pack’s Sanchez retires after 26 years at helm    Ag Journal   </a><li><a href="https://www.theguardian.com/sport/2020/apr/22/muffet-mcgraw-retires-notre-dame-basketball" target="_blank">Muffet McGraw steps down as Notre Dame head coach after legendary career    The Guardian   </a><li><a href="https://starlocalmedia.com/planocourier/sports/stallings-looks-to-continue-plano-hoops-standard/article_afc05810-938e-11ea-82f4-8734f960e90e.html" target="_blank">Stallings looks to continue Plano hoops standard | Sports    Star Local Media   </a><li><a href="https://www.theguardian.com/sport/2020/may/04/don-shula-miami-dolphins-coach-dies-nfl-football" target="_blank">Don Shula, coach who led Dolphins to NFL's only perfect season, dies aged 90    The Guardian   </a><li><a href="https://www.theguardian.com/sport/2020/may/06/sam-cane-named-surprise-new-all-blacks-captain" target="_blank">Sam Cane named All Blacks captain as new coach Ian Foster makes first major move    The Guardian   </a><li><a href="https://strategiccareers.com.au/career-transition/retirement-coaching" target="_blank">Retirement Coach | Advice for Your Retirement | Strategic Career ...    https://strategiccareers.com.au › career-transition › retirement-coaching   </a><li><a href="http://www.boomerangsretirementcoach.com/" target="_blank">BOOMERangs Retirement Life Coaching for Individuals, couples ...    www.boomerangsretirementcoach.com   </a><li><a href="http://www.amateur-fa.com/coaches/coaching-development" target="_blank">Coaching Support - Amateur FA    www.amateur-fa.com › Coaches   </a><li><a href="http://www.hertfordshirefa.com/coaches/coaching-support" target="_blank">Coaching Support - Hertfordshire FA    www.hertfordshirefa.com › Coaches   </a><li><a href="http://www.oxfordshirefa.com/coaches/coaching-support" target="_blank">Coaching Support - Oxfordshire FA    www.oxfordshirefa.com › Coaches   </a><li><a href="http://www.wiltshirefa.com/coaches/coaching-support" target="_blank">Coaching Support - Wiltshire FA    www.wiltshirefa.com › Coaches   </a>
+										</ul>
+									</div>							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+			</section>
+		<!--section -->
+		<!--footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<div class="container">
+						<p>Copyright 2020 <a href="http://www.ogwrestlingsystem.com/">OG Wrestling System.</a> Some Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+		<!--footer -->
+			
+	</div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+

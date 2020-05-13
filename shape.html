@@ -1,0 +1,511 @@
+
+
+
+
+
+
+
+	
+
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>OgWrestlingSystem</title>
+<meta charset="UTF-8" />
+<base href="http://www.ogwrestlingsystem.com/" target="_blank">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="css/ie.css" />
+<link rel="stylesheet" href="css/inheritance.css"/>
+<link rel="stylesheet" href="css/nesting.css"/>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+<script type="text/javascript" src="js/owl.carousel.js" ></script>
+
+<!--slider-main-start-->
+<link type="text/css" href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	  var slider= $('.slidermain').bxSlider({auto:true});	  
+	  $(".bx-controls-direction a").click(function () {          
+            slider.stopAuto();
+            slider.startAuto();
+		});
+	});		
+</script>
+<!--slider-main-start-->
+<script type="text/javascript">
+	 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+	$('.owl-carousel-videos').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+});
+</script>
+<!-- responsive menu -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu').click(function(){
+			$('body').toggleClass('show-menu');
+		});
+		$('.close-button').click(function(){
+			$('body').removeClass('show-menu');
+		});
+		
+	});
+</script>
+<!-- responsive menu end -->
+<!-- sticky -->
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var heighthead=$('.header_top').height();
+	if (scroll >= heighthead ) {
+        $("body").addClass("sticky", 1000);
+    }
+    else {
+		$("body").removeClass("sticky", 1000);
+	}
+})
+</script>
+<!-- sticky end -->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".fancybox").fancybox({
+			transitionIn:"fade",
+			transitionOut:"fade",
+		});
+	});
+</script>
+</head>
+<body class="home_page">
+	<!-- responsive menu -->
+	<div class="side-menu">
+		<div class="close-button">
+			Close
+			<i class="fa fa-times"></i>
+		</div>
+		<ul>
+				<li><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li id="active"><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li ><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+		</ul>
+	</div>
+	<!-- responsive menu end -->
+	<div id="wrapper">
+		<!--header -->
+			<header id="header" class="clearHeader">
+				<div class="header_top">
+					<div class="container clr">
+						<div class="head_left">
+							<div class="logo">
+								<a href="http://www.ogwrestlingsystem.com/">
+									<img src="images/logo.png" height="216" width="248" alt="logo"/>
+								</a>
+							</div>
+						</div>
+						<div class="head_right clr">
+							<div class="social_link">
+								<ul>
+									<li class="facebook">
+										<a target="_blank" href="https://www.facebook.com/OGWrestlingSystem-1558178384412614/"><i class="fa fa-facebook"></i></a>
+									</li>
+								
+									<li class="youtube">
+										<a target="_blank" href="https://www.youtube.com/channel/UCH440pV2kKWqofQ5xhSqRbw"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="search_form clr">
+								<div class="menu">Menu
+									<div class="menu-trigger">
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+								<div class="header-search" id="header-search-container">
+									<form method="get" action="#" id="search_mini_form">
+										<div class="input-box">
+											<label for="search">Search:</label>
+											<input type="search" placeholder="Search" class="input-text required-entry" value="" id="search">
+											<button class="button search-button" title="Search" type="submit">
+												<span>
+													<span><i class="fa fa-search"></i></span>
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="menu_bar">
+					<div class="container clr">
+						<ul class="menu_inner clr">
+							
+			<li><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li id="active"><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li "><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+			
+			
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+		<!--header -->
+		<!--section -->
+			<section id="section">
+					<div class="slider_wapper home_slider">
+						<ul class="slidermain">
+							<li>
+								<img src="images/cb1.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb2.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+							<img src="images/cb3.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb4.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb5.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb6.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb7.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb8.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb9.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/cb10.JPG"  style="float: left;" alt="slider_img"  width="1350" height="500" />
+							</li>
+							
+						</ul>
+						<div class="cepation_container">
+							<div class="cen">
+								<div class="gallery-caption">
+									<h2>OGanisian Wrestling System </h2>
+<a name="about"></a>
+									<h3>Coming Back to Shape <br> and staying in shape</h3>
+									
+                                    <p>This part of the website is dedicated wrestlers who want to come back</p>
+
+									
+								
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="main_container">
+						<div class="container clr">
+							<div class="page_col_main">
+								<div class="resent_posts_section">
+								    
+
+
+<div class="walking">Walking</div><div>
+            <p>Most difficult is to start doing something. Walking is easiest and provides the best results</p> 
+            <ol>
+                <li>Walk with a dog if you have one</li>
+                <li>Or walk to work if you don’t have a dog</li>
+                <li>Start with once a day short walks and reach for 2 walks a day</li>
+            </ol>
+ </div>
+
+        <p>The key is to be disciplined for 2 months or 3.</p>
+
+
+        <ol>
+                <li>The goals are is to start breathing better</li>
+                <li>to feel some strength coming back to your legs</li>
+                <li>use time while walking to strategise and to tackle various problems </li>
+            </ol>
+            
+<div class="dog">Wrestling, Playing with a Dog</div><div>
+<p>Once you have started walking, the next step is to get more physical action. I have a dog, so I try playing with it, wrestle with it and so on. What you can do with a dog</p> 
+            <ol>
+                <li>to play football</li>
+                <li>scramble with a dog</li>
+                <li>sprint whoever is faster</li>
+            </ol>
+ </div>
+
+        <p>The goal is to be acquire habits of playing with the dog so that</p>
+        <ol>
+                <li>you are in better mood</li>
+                <li>you start feeling your muscles </li>
+                <li>you sweat </li>
+            </ol>
+
+
+<div class="smock">Smoking less, Quitting</div><div>
+<p>If you don’t smoke, you are lucky and can skip this part. But if you do, you are unlikely to just quit. While quitting could be a longer term goal you have to live with it for a while</p> 
+            <ol>
+                <li>What helps to smoke less, is to go for long walks without cigarettes</li>
+                <li>is to work in the environment where smoking is prohibited and you need to go outside to smock  </li>
+                <li>Quitting is always a goal, try as many times as you can</li>
+            </ol>
+ </div>
+
+        <p>There were periods when me and my brother both smoked while we wrestled. But as pressure of the season increased we paused with the habit, returning to it, when the pressure is off. Sanasar smoked until 50, while i quit when was 30 and unfortunately started again at 46 then quit at 48 and started again at 49</p>
+        <ol>
+                <li>i admire folks who can smoke a cigarette a week and don’t fall into a habit.. </li>
+                <li> Once you quit, don’t smoke at all. No cigars, nothing </li>
+                <li>Substitute smoking with light alcohol at initial stages of quitting</li>
+            </ol>
+<div class="drink">Drinking Less</div><div><p>Rehydrating on beer after good practice is a pleasure while with age, this puts more pressure on your systems and is not welcomed. </p> 
+            <ol>
+                <li>Try to drink only good wine or beer</li>
+                <li>try to drink good beer or wine only after good practice and not in other settings</li>
+                <li>learn to cook good food, to be accompanied with good wine</li>
+
+                <li>Decrease the amounts drank and go to sleep quickly, you will fill much better the next morning</li>
+            </ol>
+ </div>
+
+        <p>If you are at a point in life when alcohol is a habit, seek further help and support. But if its still manageable and provides some positive feedback, then just try to minimize that</p>
+        <ol>
+                <li>Increasing intensity of workouts will help you to get enough body strength and shape to sustain alcohol damage</li>
+                <li>do not ever drink hard liquor</li>
+
+                <li>be open with your family and friends about your state of alcohol dependence</li>
+            </ol>
+            
+<div class="jog">Starting Jogging</div><div><p>Following 2 or months of walking, you can start jogging </p> 
+            <ol>
+                <li>keep walking, but do jog occasionally twice or 3 times a week</li>
+                <li> or add some jogging while one your walks, run parts of your walking distance. Dog will help here </li>
+                <li>Every day jogging is great, but do give yourself some rest skip days or weeks or even months, but keep walking during pauses from jogging</li>
+                <li>Aim at jogging longer distance</li>
+
+            </ol>
+ </div>
+
+        <p>Not everybody enjoy jogging, if you don’t then skip this step, but do keep walking. That’s essential, but do try jogging a longer runs especially if you are already in better shape. This is the easiest way to get pressure on our body</p>
+        <ol>
+                <li>run in the woods, or on river banks</li>
+                <li>run slowly</li>
+                <li>keep checking your blood pressure and over asses your changes in shape to decide wither to continue with jogging </li>
+            </ol>
+<div class="warmups">Starting Wrestling Warm Ups</div><div><p>If you have access to wrestling gym, that’s great. Nothing is better than feel again the springing mat under your wrestling shoes (buy a pair)</p> 
+            <ol>
+                <li>run and do warm-ups </li>
+                <li>stretch yourself </li>
+                <li>add more gymnastics </li>
+                <li>do imaginary sweeps sprawls and throws </li>
+                <li>do leg attacks</li>
+                <li>practice imaginary gut ranch defence </li>
+
+            </ol>
+ </div>
+
+        <p>If you don’t have access to the mat, try to get access to some gym </p>
+        <ol>
+                <li>do find a gym where it feels good </li>
+                <li>some university gym or some suburb club</li>
+                <li> do your research, connect with people, old friends, check out what they do, where they go to practice</li>
+            </ol>
+<div class="week">Wrestling Practice 2 Times a Week, Sweating</div><div><p>Once you got access to the mat, try working out once or twice a week</p> 
+            <ol>
+                <li>don’t ever go hard in the first couple of months, just play</li>
+                <li>skip parts of the warming up, especially if you are in practice with yonger crowd</li>
+
+                <li>do more of the drills, but also do some  playing scramble and wrestling</li>
+                <li>try your old moves but also try to learn new stuff, there is plenty of video support these days </li>
+
+                <li>imitate different techniques, try John Smith shots, or try Sanasar’s smooth moves and tip toes stand. Explore </li>
+            </ol>
+ </div>
+
+        <p>Spend another 5-12 months in this mode of very gentle practice.</p>
+        <ol>
+                <li> do go for some matches if there is an option </li>
+                <li>but keep it cool, don’t go 100% </li>
+                <li>protect your breath and heart, don’t get too tired</li>
+            </ol>
+<div class="mma">Adding Weekly Grappling or MMA Workout</div><div><p>Add some new style of wrestling, grappling, judo, mma or bjj, capoeira there are plenty of those these days. Get yourself a Gi</p> 
+            <ol>
+                <li>start once a month</li>
+                <li>and increase to once a week</li>
+                <li>get new friends</li>
+            </ol>
+ </div>
+
+        <p>Try participating in tournaments </p>
+        <ol>
+                <li>be very careful with your knees and ankles perhaps wear protection if unsure </li>
+                <li>travel to different countries for tournaments. New styles have lots of tournaments around the world, and most anybody can participate </li>
+                <li> do more than one style </li>
+            </ol>
+<div class="ready">Getting Ready for a First Tournament</div><div><p>If you decide to stage your comeback in your main Olympic style was it freestyle, Greco or judo, that’s fine. But otherwise do it in your new style</p> 
+            <ol>
+                <li>try not to aim at veterans tournaments, go for real stuff, to wrestle with young and performing wrestlers</li>
+                <li>you are likely get injured in your first tournament, but try to be prepared for it, and don’t give up, use plenty of ice initially</li>
+                <li>come back to practice as soon as you can </li>
+            </ol>
+ </div>
+
+
+
+
+
+
+								
+							
+									
+								</div>
+							</div>	
+						
+
+								
+						<div class="sidebar">
+								<div class="latest_news_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Latest </span>
+											<span class="white">News</span>
+										</div>
+									</div>
+
+								
+			<a name="latestn">
+			    
+			
+								<div class="walking">Athletes Coming Back to Shape</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://www.espn.com/soccer/major-league-soccer/story/4093194/mls-commissioner-don-garber-cautiously-optimistic-about-leagues-return".>MLS commissioner Don Garber 'cautiously optimistic' about league's return    ESPN   </a><li><a href="https://www.desmoinesregister.com/story/sports/college/drake/2020/05/08/drake-football-pioneer-football-league-bulldogs-coronavirus-training/5178868002/".>Drake football players find creative and unorthodox ways to stay in shape    DesMoinesRegister.com   </a><li><a href="http://clevelandbanner.com/stories/county-schools-prepare-for-athletes-return,111427".>County schools prepare for athlete's return    Cleveland Daily Banner   </a><li><a href="https://www.journalnow.com/sports/college/asu/the-cost-of-app-states-returning-spring-seniors-and-how-the-athletic-department-plans-to/article_ff2454a9-abfa-5569-9fdb-019c5984705f.html".>The cost of App State's returning spring seniors, and how the athletic department plans to pay for it    Winston-Salem Journal   </a><li><a href="https://www.fayettevilleflyer.com/2020/05/08/yurachek-faces-daunting-questions-in-returning-hogs-to-playing-fields/".>Yurachek faces daunting questions in returning Hogs to playing fields    Fayetteville Flyer   </a>
+										</ul>
+									
+								<div class="walking">Alcoholic Athletes</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://www.news-gazette.com/opinion/columns/jim-dey-appeals-court-on-beer-lawsuit-tastes-not-great-should-be-less-silly/article_1fbe2447-3df7-541f-872d-ebe91869ddda.html".>Jim Dey | Appeals court on beer lawsuit: Tastes not great, should be ...    Champaign/Urbana News-Gazette   </a><li><a href="https://timesofindia.indiatimes.com/sports/boxing/boxer-sugar-ray-leonard-survives-lockdown-with-remote-alcoholics-anonymous-meetings/articleshow/75608814.cms".>Boxer Sugar Ray Leonard survives lockdown with remote Alcoholics Anonymous meetings    Times of India   </a><li><a href="http://cbs2iowa.com/news/local/gov-reynolds-issues-new-proclamation-opening-more-businesses-included".>Gov. Reynolds issues new proclamation opening some businesses statewide    KGAN TV   </a><li><a href="https://nsudemons.com/sports/2019/8/16/Alcohol%2520Policy.aspx".>Alcohol Sales/Service Policy    nsudemons.com   </a><li><a href="https://goexplorers.com/news/2020/1/8/general-la-salle-athletics-announces-enhanced-fan-experience-options-with-alcoholic-beverage-pilot-program.aspx".>La Salle Athletics Announces Enhanced Fan Experience Option with ...    La Salle University Athletics   </a>
+										</ul>
+									
+								<div class="walking">Wrestling Exercising Techniques</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://shoresportsnetwork.com/del-dalpra-retiring-as-red-bank-regional-athletic-director/".>Del DalPra retiring as Red Bank Regional athletic director    shoresportsnetwork.com   </a><li><a href="https://www.irishcatholic.com/exclusive-excerpt-love-life-by-catherine-mccann/".>Exclusive Excerpt: Love Life by Catherine McCann    The Irish Catholic   </a><li><a href="https://techzimo.com/the-undertaker-almost-died-wrestling-against-goldberg-at-wwe-super-showdown/".>The Undertaker Almost DIED Wrestling Against Goldberg At WWE Super ShowDown!    Techzimo   </a><li><a href="https://www.washingtonexaminer.com/policy/defense-national-security/pentagon-slowly-moving-to-establish-new-normal-as-coronavirus-pandemic-shows-its-staying-power".>Pentagon slowly moving to establish ‘new normal’ as coronavirus pandemic shows its staying power    Washington Examiner   </a><li><a href="https://www.nbcsports.com/washington/ravens/ravens-sign-undrafted-free-agent-fullback-bronson-rechsteiner-son-pro-wrestler-rick-steiner".>Ravens sign UDFA fullback Bronson Rechsteiner, the son of pro ...    NBCSports.com   </a>
+										</ul>
+									
+								<div class="walking">Motivation in Wrestling</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://techzimo.com/the-undertaker-almost-died-wrestling-against-goldberg-at-wwe-super-showdown/".>The Undertaker Almost DIED Wrestling Against Goldberg At WWE Super ShowDown!    Techzimo   </a><li><a href="https://www.wkbn.com/home/state-champion-wrestler-commits-to-college-with-virtual-signing/".>State champion wrestler commits to college with virtual signing    WKBN.com   </a><li><a href="https://www.mandatory.com/wrestlezone/features/1184981-darby-allin-aew-wrestlezone-interview".>Driven By Doubt: Darby Allin Does His Best Work Backed In A ...    Mandatory   </a><li><a href="https://www.gainesvilletimes.com/sports/high-schools/seniors-2020-gainesville-senior-was-close-falling-through-cracks-wrestling-helped-him-focus-his-efforts-graduate/".>Seniors 2020: This Gainesville senior was falling through the cracks ...    Gainesville Times   </a><li><a href="https://www.newindianexpress.com/cities/kochi/2020/may/06/lockdown-proves-to-be-a-double-whammy-for-para-athletes-2139580.html".>Lockdown proves to be a double whammy for para-athletes    The New Indian Express   </a>
+										</ul>
+									
+								<div class="walking">Depression and Athletes</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://www.theatlantic.com/education/archive/2019/04/teen-athletes-mental-illness/586720/".>High-School Athletes Are Struggling With Mental Illness - The Atlantic    https://www.theatlantic.com › education › archive › 2019/04 › teen-athletes...   </a><li><a href="https://www.sciencedaily.com/releases/2020/05/200505093127.htm".>'Loss of pleasure' found in teen sleep study: But easy interventions ...    Science Daily   </a><li><a href="https://www.mcall.com/sports/mc-spt-sports-psychologist-talks-about-athletes-coping-20200507-odlmbvm3l5d67ehmw3kyvmyyei-story.html".>Sports psychologist says resiliency of athletes will allow them to get through COVID-19 shutdown    Morning Call   </a><li><a href="https://theundefeated.com/features/mental-stress-is-an-unspoken-part-of-the-game-for-esports-athletes/".>Mental stress is an unspoken part of the game for esports athletes    The Undefeated   </a><li><a href="http://kfoxtv.com/sports/local-sports/ut-el-paso-student-athletes-using-virtual-mental-health-resources".>UT El Paso student athletes using virtual mental health resources    KFOX El Paso   </a>
+										</ul>
+									
+								<div class="walking">Beyond Sports Life What to do</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://lifebeyondsport.com/".>Life Beyond Sport | Better leaders. Stronger teams. Greater impact.    https://lifebeyondsport.com   </a><li><a href="https://www.gosanangelo.com/story/sports/high-school/2020/05/07/west-texas-high-school-athletes-discuss-life-without-sports-due-covid-19/3048094001/".>Area athletes discuss life without sports during COVID-19 pandemic    San Angelo Standard Times   </a><li><a href="https://www.cbssports.com/college-basketball/news/prodigy-players-bypassing-college-basketball-for-nba-g-league-pro-opportunities-will-not-damage-sport/".>Prodigy players bypassing college basketball for NBA G League, pro opportunities will not damage sport    CBSSports.com   </a><li><a href="https://www.nhl.com/news/greatest-moments-of-nhl-season-second-round/c-316795534".>Greatest Moments of NHL Season … So Far: second round, matchup 7    NHL.com   </a><li><a href="http://www.bluegoldsports.com/wvu-football-darlow-form-partnership-to-enhance-student-athlete-branding/".>WVU Football, Darlow Form Partnership to Enhance Student-Athlete ...    Blue Gold Sports   </a>
+										</ul>
+									
+								<div class="walking">Wrestling Tradition in Family</div>
+										
+										<div class="sidbar_ul" <ul><li><a href="https://www.courierpress.com/story/sports/2020/02/08/mater-dei-wrestlers-dominate-field-north-regional/4647573002/".>Eglis perpetuate Mater Dei's family wrestling tradition; Wildcats roll ...    https://www.courierpress.com › story › sports › 2020/02/08 › mater-dei-wr...   </a><li><a href="http://www.statecollege.com/news/columns/my-pick-for-happy-valley-mom-of-the-year-is-one-adventurous-soul,1483209/".>My Pick for Happy Valley Mom of the Year Is One Adventurous Soul    State College News   </a><li><a href="https://www.caledonianrecord.com/community/deaths/leah-labounty---obituary/article_ad27961b-86da-509b-962a-d5a9ac9c00d4.html".>Leah LaBounty - Obituary | Deaths | caledonianrecord.com    Caledonian Record   </a><li><a href="http://www.oswegocountynewsnow.com/sports/fulton-native-clark-set-to-enter-section-iii-wrestling-hall-of-fame/article_90d6a99c-8fbd-11ea-bddc-d75d989f904f.html".>Fulton native Clark set to enter Section III Wrestling Hall of Fame    oswegocountynewsnow.com   </a><li><a href="http://slam.canoe.com/Slam/Wrestling/2020/04/12/22806263.html".>New André bio proved to be a Giant project    Canoe   </a>
+										</ul>
+												
+
+				</div>
+				
+							<div class="clear"></div>
+						</div>
+						</div>
+						</div>
+					
+			</section>
+		<!--section -->
+		<!--footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<div class="container">
+						<p>Copyright 2020 <a href="http://www.ogwrestlingsystem.com/">OG Wrestling System.</a> Some Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+		<!--footer -->
+			
+	</div>
+</body>
+
+
+</html>
+
+
+
+

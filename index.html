@@ -1,0 +1,2152 @@
+
+
+
+
+
+
+
+	
+
+
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+    
+<title>OgWrestlingSystem</title>
+<meta charset="UTF-8" />
+ <base href="http://www.ogwrestlingsystem.com/" target="_blank">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/styles.css" />
+<link type="text/css" rel="stylesheet" href="css/responsive.css" />
+<link type="text/css" rel="stylesheet" href="css/ie.css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css' />
+
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.easing-1.3.pack.js"></script>
+<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+<script type="text/javascript" src="js/owl.carousel.js" ></script>
+<style>
+div li {
+	list-style: outside none none;
+}
+ol, ul { list-style: none;}
+</style>
+
+<!--slider-main-start-->
+<link type="text/css" href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	  var slider= $('.slidermain').bxSlider({auto:true});	  
+	  $(".bx-controls-direction a").click(function () {          
+            slider.stopAuto();
+            slider.startAuto();
+		});
+	});		
+</script>
+<!--slider-main-start-->
+<script type="text/javascript">
+	 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+	$('.owl-carousel-videos').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:true, 
+    autoplay:true,
+    autoplayTimeout:1800,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+});
+</script>
+<!-- responsive menu -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.menu').click(function(){
+			$('body').toggleClass('show-menu');
+		});
+		$('.close-button').click(function(){
+			$('body').removeClass('show-menu');
+		});
+		
+	});
+</script>
+<!-- responsive menu end -->
+<!-- sticky -->
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var heighthead=$('.header_top').height();
+	if (scroll >= heighthead ) {
+        $("body").addClass("sticky", 1000);
+    }
+    else {
+		$("body").removeClass("sticky", 1000);
+	}
+})
+</script>
+<!-- sticky end -->
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".fancybox").fancybox({
+			transitionIn:"fade",
+			transitionOut:"fade",
+		});
+	});
+</script>
+</head>
+<body class="home_page">
+	<!-- responsive menu -->
+	<div class="side-menu">
+		<div class="close-button">
+			Close
+			<i class="fa fa-times"></i>
+		</div>
+		<ul>
+			<li class="active"><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+
+		</ul>
+	</div>
+	<!-- responsive menu end -->
+	<div id="wrapper">
+		<!--header -->
+			<header id="header" class="clearHeader">
+				<div class="header_top">
+					<div class="container clr">
+						<div class="head_left">
+							<div class="logo">
+								<a href="http://www.ogwrestlingsystem.com/">
+									<img src="images/logo.png" height="216" width="248" alt="logo"/>
+								</a>
+							</div>
+						</div>
+						<div class="head_right clr">
+							<div class="social_link">
+								<ul>
+									<li class="facebook">
+										<a target="_blank" href="https://www.facebook.com/OGWrestlingSystem-1558178384412614/"><i class="fa fa-facebook"></i></a>
+									</li>
+								
+									<li class="youtube">
+										<a target="_blank" href="https://www.youtube.com/channel/UCH440pV2kKWqofQ5xhSqRbw"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div class="search_form clr">
+								<div class="menu">Menu
+									<div class="menu-trigger">
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
+								<div class="header-search" id="header-search-container">
+									<form method="get" action="#" id="search_mini_form">
+										<div class="input-box">
+											<label for="search">Search:</label>
+											<input type="search" placeholder="Search" class="input-text required-entry" value="" id="search">
+											<button class="button search-button" title="Search" type="submit">
+												<span>
+													<span><i class="fa fa-search"></i></span>
+												</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="menu_bar">
+					<div class="container clr">
+						<ul class="menu_inner clr">
+							
+			<li class="active"><a href="http://ogwrestlingsystem.com/index.html">Oganisian Wrestling<br> Home </a></li>
+			<li><a href="http://ogwrestlingsystem.com/shape.html">Coming  Back <br> to Shape</a></li>
+			<li><a href="http://ogwrestlingsystem.com/sprtak.html">Former  Spartak <br> Baumanskaia Team</a></li>
+			<li><a href="http://ogwrestlingsystem.com/ai.html">Virtual <br>Wrestling</a></li>
+			<li><a href="mailto:ogwrestlingsystem@gmail.com">Contact <br>Us</a></li>
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+		<!--header -->
+		<!--section -->
+			<section id="section">
+					<div class="slider_wapper home_slider">
+						<ul class="slidermain">
+							<li>
+								<img src="images/slider_img_1.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/slider_img_2.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+							<li>
+								<img src="images/slider_img_3.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_4.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_5.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_6.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_7.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_8.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_9.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_10.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_11.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_12.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_13.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_14.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+
+<li>
+								<img src="images/slider_img_15.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_16.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_17.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+<li>
+								<img src="images/slider_img_18.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_19.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+<li>
+								<img src="images/slider_img_20.jpg" alt="slider_img" width="1350" height="500" />
+							</li>
+
+
+
+
+						</ul>
+						<div class="cepation_container">
+							<div class="cen">
+								<div class="gallery-caption">
+									<h2>OGanisian Wrestling System</h2>
+									<a name="about"></a>
+									<h3>Loving and Promoting Wrestling</h3>
+									<p>Part of the Midlincoln Research<a href="http://www.midlincoln.com">(visit site)</a> Deurbanisation Enterprise Initiative</p>
+									<p>Initiative put together by Ovanes and Sanasar Oganisian </p>
+									
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="main_container">
+						<div class="container clr">
+							<div class="page_col_main">
+								<div class="resent_posts_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Recent </span>
+											<span class="white">Posts</span>
+										</div>
+									</div>
+									<div class="owl-carousel resent_carousel">
+										
+										
+										
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/670158540485505/" target="_blank"><img src="images/sdf.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/670158540485505/">Single leg head inside defence</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>change direction and use your mass, one of my very favorites moves in wrestling </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/648379259277692/" target="_blank"><img src="images/apl.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/648379259277692/">Ankle pick, a lazy way to attack</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Its a real weapon for some wrestlers </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/878479995912642/" target="_blank"><img src="images/fcr.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/878479995912642/">Relaxed version of fireman carry </a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>a memory from teenage wrestling years </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/601449373773129/" target="_blank"><img src="images/hising.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/601449373773129/">High single leg head inside from underhook</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Watch the setup from underhook and perfect execution </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/213660233256832/" target="_blank"><img src="images/21carryt.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/213660233256832/">A version of fireman's carry with back trip from Russian 2 on 1</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>See the the setup with leg trip </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/539306776987284/" target="_blank"><img src="images/swizard.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/539306776987284/">Single Leg Defence.</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Wizard helps to gain control even if your leg was attacked. </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://youtu.be/PwpCUnGpu4I" target="_blank"><img src="images/insidet.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://youtu.be/PwpCUnGpu4I">Inside trip taken to perfection</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>a setup for this move requires an arm pul </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/240894412766507/" target="_blank"><img src="images/lowsingle.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/240894412766507/">Low Tricky Single</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Second level of attack after a low single leg shut </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/1020456818350494/" target="_blank"><img src="images/dlsan.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/1020456818350494/">Famous double leg attack by Sanasar</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>but watch the foot work </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/1558178384412614/videos/286910689102504/" target="_blank"><img src="images/lsingle.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/1558178384412614/videos/286910689102504/">Inside low single leg by Sanasar</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>watch how to post a hand and get up with leg, despite opponent defence </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/251306158391999/" target="_blank"><img src="images/opportunistic.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/251306158391999/">Very opportunistic.</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>OG Wrestling System Top Secret Attacks series - new one. Very opportunistic. </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/247601062095842/" target="_blank"><img src="images/headandshoulder.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/247601062095842/">Head and shoulder</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Head and shoulder attack from underhook </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/275679769287971/" target="_blank"><img src="images/armthrow.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/275679769287971/">Arm Throw</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Arm Throw. This one is not so secret.
+ </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/239204846268797/" target="_blank"><img src="images/semenandvictor.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/239204846268797/">Semion and Victor</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Semen and Victor are tough </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/272469122942369/" target="_blank"><img src="images/outsidetrip.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/272469122942369/">Outside Trip</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Outside trip one of the secret ogwrestlingsystem moves inspired by Levan Tedeashvilli outside trip </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/259606957561919/" target="_blank"><img src="images/firemancarry.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/259606957561919/">Fireman Carry</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>This is probably the first move that freestyle wrestlers learn when they start wrestling. i am nostalgic.   </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.youtube.com/watch?v=qcc79qdnvm0" target="_blank"><img src="images/posts_video_img_4.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.youtube.com/watch?v=qcc79qdnvm0">Hip Throw</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Various ways to do that  ... </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/274537986068816/" target="_blank"><img src="images/highsingle.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/274537986068816/">High Single Leg</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Continuig OG Wrestling System Secret Attack Series --  Here is High Single Leg Takedown From Under Hook with secret head punch set up) </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/273573772831904/" target="_blank"><img src="images/highdouble.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/273573772831904/">High Double Legs</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>OG Wrestling System Secret Attacks series.. HIGH DOUBLE LEGS.. i always thought leg work is the most important for good high double attack! </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/252943938228221/" target="_blank"><img src="images/headlock.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/252943938228221/">Front Head Lock</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>OG Wrestling System Top Secret Attacks. This headlock technique is for your eyes only.
+I press on his shoulder and wait until he makes a small step back. 
+But just a notch of a second before he lands his right foot on the mat, i pull him forward and grab his head </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="http://www.youtube.com/watch?v=3qlA6RkR-l8" target="_blank"><img src="images/posts_video_img_2.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="http://www.youtube.com/watch?v=3qlA6RkR-l8">Secret Duck Under</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Intimidate the opponent with false attempts ...  </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.facebook.com/100005378499349/videos/275978395924775/" target="_blank"><img src="images/overhook.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.facebook.com/100005378499349/videos/275978395924775/">Overhook</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Overhook is much more defence position , but some wrestlers use it for attack.  Using Whizzer (or overhook) to do leg throw. This is less often done in freestyle these days, but still very common technique  with central asian wrestlers as well as very common defence technique. But we want to highlite this as an offensive move. </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="http://www.youtube.com/watch?v=jjV2TBZDI4w" target="_blank"><img src="images/posts_video_img_4.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="http://www.youtube.com/watch?v=jjV2TBZDI4w">Sunday Push-push with David</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>The beginning of wrestling is just pushing each other like in high school brawl and preparing to attack.  These wrestlers are of immense physical strength do not expect any takedowns)
+ </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="http://www.youtube.com/watch?v=F10POIcRsUQ" target="_blank"><img src="images/posts_video_img_4.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="http://www.youtube.com/watch?v=F10POIcRsUQ">Wrestling with Semion</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Big vs. Small
+ </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="https://www.youtube.com/watch?v=qcc79qdnvm0" target="_blank"><img src="images/posts_video_img_4.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="https://www.youtube.com/watch?v=qcc79qdnvm0">OG Wrestling system musical attacks</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Hip Throw </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="http://www.youtube.com/watch?v=qKjkV6V4-Ws" target="_blank"><img src="images/posts_video_img_3.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="http://www.youtube.com/watch?v=qKjkV6V4-Ws">Ankle Pick</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Subtle move  ... </p>
+											</div>
+										</div>
+
+
+<div class="item">
+											<div class="video_block"><a href="http://www.youtube.com/watch?v=Hw4X4Rrrugg" target="_blank"><img src="images/posts_video_img_1.jpg" alt="posts_video" width="380" height="200" /></a></div>
+											<h2 class="resent_title"><a href="http://www.youtube.com/watch?v=Hw4X4Rrrugg">High School Double Legs</a></h2>
+											<div class="posts_user_details">
+												<ul>
+													<li class="posts_user">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Ovanes Oganisian</span>
+													</li>
+													<li class="posts_date">
+														<span class="icon"></span>
+														<span class="posts_user_dtc">Feb 13 2020</span>
+													</li>
+													<li class="posts_comment">
+														<span class="posts_user_dtc">23</span>
+													</li>
+												</ul>
+											</div>
+											<div class="resent_dtc">
+												<p>Its simple and very powerful ...  </p>
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
+									<a name="recentn"></a>
+									<div class="resent_user_section clr">
+										<div class="resent_user_blocks clr">
+											
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/670158540485505/"  target="_blank"><img src="images/sdf.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/670158540485505/"  target="_blank">Single leg head inside defence</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>change direction and use your mass, one of my very favorites moves in wrestling </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/648379259277692/"  target="_blank"><img src="images/apl.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/648379259277692/"  target="_blank">Ankle pick, a lazy way to attack</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Its a real weapon for some wrestlers </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/878479995912642/"  target="_blank"><img src="images/fcr.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/878479995912642/"  target="_blank">Relaxed version of fireman carry </a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>a memory from teenage wrestling years </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/601449373773129/"  target="_blank"><img src="images/hising.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/601449373773129/"  target="_blank">High single leg head inside from underhook</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Watch the setup from underhook and perfect execution </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/213660233256832/"  target="_blank"><img src="images/21carryt.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/213660233256832/"  target="_blank">A version of fireman's carry with back trip from Russian 2 on 1</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>See the the setup with leg trip </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/539306776987284/"  target="_blank"><img src="images/swizard.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/539306776987284/"  target="_blank">Single Leg Defence.</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Wizard helps to gain control even if your leg was attacked. </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://youtu.be/PwpCUnGpu4I"  target="_blank"><img src="images/insidet.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://youtu.be/PwpCUnGpu4I"  target="_blank">Inside trip taken to perfection</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>a setup for this move requires an arm pul </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/240894412766507/"  target="_blank"><img src="images/lowsingle.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/240894412766507/"  target="_blank">Low Tricky Single</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Second level of attack after a low single leg shut </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/1020456818350494/"  target="_blank"><img src="images/dlsan.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/1020456818350494/"  target="_blank">Famous double leg attack by Sanasar</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>but watch the foot work </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/1558178384412614/videos/286910689102504/"  target="_blank"><img src="images/lsingle.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/1558178384412614/videos/286910689102504/"  target="_blank">Inside low single leg by Sanasar</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>watch how to post a hand and get up with leg, despite opponent defence </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/251306158391999/"  target="_blank"><img src="images/opportunistic.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/251306158391999/"  target="_blank">Very opportunistic.</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>OG Wrestling System Top Secret Attacks series - new one. Very opportunistic. </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/247601062095842/"  target="_blank"><img src="images/headandshoulder.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/247601062095842/"  target="_blank">Head and shoulder</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Head and shoulder attack from underhook </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/275679769287971/"  target="_blank"><img src="images/armthrow.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/275679769287971/"  target="_blank">Arm Throw</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Arm Throw. This one is not so secret.
+ </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/239204846268797/"  target="_blank"><img src="images/semenandvictor.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/239204846268797/"  target="_blank">Semion and Victor</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Semen and Victor are tough </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/272469122942369/"  target="_blank"><img src="images/outsidetrip.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/272469122942369/"  target="_blank">Outside Trip</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Outside trip one of the secret ogwrestlingsystem moves inspired by Levan Tedeashvilli outside trip </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/259606957561919/"  target="_blank"><img src="images/firemancarry.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/259606957561919/"  target="_blank">Fireman Carry</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>This is probably the first move that freestyle wrestlers learn when they start wrestling. i am nostalgic.   </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.youtube.com/watch?v=qcc79qdnvm0"  target="_blank"><img src="images/posts_video_img_4.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.youtube.com/watch?v=qcc79qdnvm0"  target="_blank">Hip Throw</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Various ways to do that  ... </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/274537986068816/"  target="_blank"><img src="images/highsingle.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/274537986068816/"  target="_blank">High Single Leg</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Continuig OG Wrestling System Secret Attack Series --  Here is High Single Leg Takedown From Under Hook with secret head punch set up) </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/273573772831904/"  target="_blank"><img src="images/highdouble.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/273573772831904/"  target="_blank">High Double Legs</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>OG Wrestling System Secret Attacks series.. HIGH DOUBLE LEGS.. i always thought leg work is the most important for good high double attack! </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/252943938228221/"  target="_blank"><img src="images/headlock.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/252943938228221/"  target="_blank">Front Head Lock</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>OG Wrestling System Top Secret Attacks. This headlock technique is for your eyes only.
+I press on his shoulder and wait until he makes a small step back. 
+But just a notch of a second before he lands his right foot on the mat, i pull him forward and grab his head </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="http://www.youtube.com/watch?v=3qlA6RkR-l8"  target="_blank"><img src="images/posts_video_img_2.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="http://www.youtube.com/watch?v=3qlA6RkR-l8"  target="_blank">Secret Duck Under</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Intimidate the opponent with false attempts ...  </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.facebook.com/100005378499349/videos/275978395924775/"  target="_blank"><img src="images/overhook.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.facebook.com/100005378499349/videos/275978395924775/"  target="_blank">Overhook</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Overhook is much more defence position , but some wrestlers use it for attack.  Using Whizzer (or overhook) to do leg throw. This is less often done in freestyle these days, but still very common technique  with central asian wrestlers as well as very common defence technique. But we want to highlite this as an offensive move. </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="http://www.youtube.com/watch?v=jjV2TBZDI4w"  target="_blank"><img src="images/posts_video_img_4.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="http://www.youtube.com/watch?v=jjV2TBZDI4w"  target="_blank">Sunday Push-push with David</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>The beginning of wrestling is just pushing each other like in high school brawl and preparing to attack.  These wrestlers are of immense physical strength do not expect any takedowns)
+ </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="http://www.youtube.com/watch?v=F10POIcRsUQ"  target="_blank"><img src="images/posts_video_img_4.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="http://www.youtube.com/watch?v=F10POIcRsUQ"  target="_blank">Wrestling with Semion</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Big vs. Small
+ </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="https://www.youtube.com/watch?v=qcc79qdnvm0"  target="_blank"><img src="images/posts_video_img_4.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="https://www.youtube.com/watch?v=qcc79qdnvm0"  target="_blank">OG Wrestling system musical attacks</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Hip Throw </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="http://www.youtube.com/watch?v=qKjkV6V4-Ws"  target="_blank"><img src="images/posts_video_img_3.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="http://www.youtube.com/watch?v=qKjkV6V4-Ws"  target="_blank">Ankle Pick</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Subtle move  ... </p>
+													</div>
+												</div>
+											</div>
+
+
+
+
+											<div class="resent_block_user">
+												<div class="resent_block_left">
+													<div class="resent_block_image">
+														<a href="http://www.youtube.com/watch?v=Hw4X4Rrrugg"  target="_blank"><img src="images/posts_video_img_1.jpg" width="140" height="113" alt="posts_user" /></a>
+													</div>
+												</div>
+												<div class="resent_block_right">
+													<h3><a href="http://www.youtube.com/watch?v=Hw4X4Rrrugg"  target="_blank">High School Double Legs</a></h3>
+													<div class="posts_user_details">
+														<ul>
+															<li class="posts_user">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">Ovanes</span>
+															</li>
+															<li class="posts_date">
+																<span class="icon"></span>
+																<span class="posts_user_dtc">May 13 2020</span>
+															</li>
+															<li class="posts_comment">
+																<span class="posts_user_dtc">23</span>
+															</li>
+														</ul>
+													</div>
+													<div class="resent_dtc">
+														<p>Its simple and very powerful ...  </p>
+													</div>
+												</div>
+											</div>
+
+
+											
+											
+										</div>
+										<div class="view_all">
+
+
+											<a class="view_all_btn" href="#">View All</a>
+										</div>
+									</div>
+								</div>
+
+									<a name="recentv">
+								<div class="videos_archive_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Videos </span>
+											<span class="white">Archive</span>
+										</div>
+									</div>
+									
+		
+			
+			
+									<div class="owl-carousel-videos videos_carousel">
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/RyRxnI5bp9w"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/RyRxnI5bp9w">Yury Shahmuradov Excellent Technique Video</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow... ...  Part 1</p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/MCyNF5hdoyc"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/MCyNF5hdoyc">Yury Shahmuradov Excellent Technique Video Part 2</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow...... Part 2  </p>
+											</div>
+										</div>
+										<div class="item">
+											<div class="video_block"><a href="https://youtu.be/SlvgAev9gC8"><img src="images/video_archive_img.jpg" alt="video_archive" width="785" height="341" /></a></div>
+											<h2 class="videos_archive_title"><a href="https://youtu.be/SlvgAev9gC8">Yury Shahmuradov Excellent Technique Video Part 3</a></h2>
+											<div class="videos_archive_dtc">
+												<p>Video featuring many star wrestlers from Moscow..and also bits og 1981 USSR Championships in Yakutsk with Sanasar, Gurgen in the clip.... Part 3 </p>
+											</div>
+										</div>
+										
+									</div>
+									<div class="videos_archive_bottom clr">
+										<div class="videos_archive_blocks clr">
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/GWk3peSG5qU">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_1.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Ahmed Atavov, WC Trials</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/G9ypoX8Y5cQ">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_2.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Trost</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/hilZDBWgr_w">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_3.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Jim Scherr</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://youtu.be/z7iY2RFjcqU">
+													<div class="archive_videos">
+														<img src="images/archive_videos_img_4.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Sanasar vs. Bill Scherr</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://www.flowrestling.org/video/5155042-sanasar-oganesyan-v-howard-harris-1981-world-cup">
+													<div class="archive_videos">
+														<img src="images/sanharris.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">1981 Sanasar Oganesian vs.  Howard Harris</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="https://www.facebook.com/molsport.alania/videos/1287598811371901/UzpfSTEwMDAwNTM3ODQ5OTM0OToxMzQ0MDAwOTcyNDU1ODQw/?id=100005378499349">
+													<div class="archive_videos">
+														<img src="images/sannaniev.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">A little bit of Sanasar Crazy Attack and Scramble with Peter Naniev in 1983 in this excellent video dedicated to great coatch Batia</div>
+												</a>
+											</div>
+										
+												<div class="videos_archive_block">
+												<a href="https://www.youtube.com/watch?v=znzuhwEonEw&t=6s">
+													<div class="archive_videos">
+														<img src="images/vmaloc.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Ovanes Oganisian vs. Dave Malecek 1992 190 lbs</div>
+												</a>
+											</div>
+											<div class="videos_archive_block">
+												<a href="	https://youtu.be/6TUgX95Qi7o">
+													<div class="archive_videos">
+														<img src="images/vmccoy.jpg" alt="video_archive" width="190" height="154"/>
+													</div>
+													<div class="archive_videos_head">Ovanes Oganisian vs.Kerry McCoy 1993 190 lbs National Duals</div>
+												</a>
+											</div>
+										</div>
+										<div class="view_all">
+											<a class="view_all_btn" href="#">View All</a>
+										</div>
+									</div>
+								</div>
+								<div class="photo_archive_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Photo </span>
+											<span class="white">Archive</span>
+										</div>
+									</div>
+									<div class="photo_archive_group">
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/photo_img_1.jpg" title="With Medved Junior">
+													<img src="images/photo_img_1.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">With Medved Junior</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/photo_img_2.jpg" title="Gurgen and Arshak">
+													<img src="images/photo_img_2.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Gurgen Bagdasarian and Arshak Sanoyan</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_5">
+												<a class="fancybox" rel="group" href="images/photo_img_3.jpg" title="Highshool">
+													<img src="images/photo_img_3.jpg" alt="photo_archive" width="303" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Moscow Highschool</div>
+													</div>
+												</a>
+											</div>
+											<div class="photo_col photo_col_7">
+												<a class="fancybox" rel="group" href="images/photo_img_4.jpg" title="Visiting Siberia">
+													<img src="images/photo_img_4.jpg" alt="photo_archive" width="464" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">Visiting Siberia</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="photo_archive_block">
+											<div class="photo_col photo_col_12">
+												<a class="fancybox" rel="group" href="images/photo_img_5.jpg" title="OG Wrestling System Gym">
+													<img src="images/photo_img_5.jpg" alt="photo_archive" width="785" height="244" />
+													<div class="photo_border"></div>
+													<div class="photo_cep">
+														<div class="search_icon"><i class="fa fa-search"></i></div>
+														<div class="photo_head">OG Wrestling System Gym</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="view_all">
+										<a class="view_all_btn" href="#">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar">
+								<div class="latest_news_section">
+									<div class="page_title">
+										<div class="title_inner">
+											<span class="black">Latest </span>
+											<span class="white">News</span>
+										</div>
+									</div>
+
+								
+			<a name="latestn">
+			
+
+
+								<div class="insidebar_block">
+										<a name="Freestyle Wrestling"><div class="sidebar_title">Freestyle Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.idsnews.com/article/2020/05/iu-wrestling-signees-tabbed-as-all-americans" target="_blank">IU wrestling signees tabbed as All-Americans    Indiana Daily Student   </a><li><a href="https://www.journal-news.net/journal-news/local-wrestlers-lose-opportunity-to-stay-active-on-mat-with-freestyle-greco-club/article_658656cf-177e-5926-b242-e9d403470285.html" target="_blank">Local wrestlers lose opportunity to stay active on mat with freestyle ...    Martinsburg Journal   </a><li><a href="https://www.miningjournal.net/sports/2020/05/tops-in-the-nation-former-northern-michigan-university-student-u-s-olympic-education-center%25E2%2580%2588wrestler-max-nowry-named-2019-greco-roman-wrestler-of-the-year/" target="_blank">Tops in the nation: Former Northern Michigan University student ...    Marquette Mining Journal   </a><li><a href="https://www.teamusa.org/News/2020/May/10/After-Defending-MMA-Title-Saturday-Former-Team-USA-Wrestling-Star-Henry-Cejudo-Calls-It-A-Career" target="_blank">After Defending MMA Title Saturday, Former Team USA Wrestling ...    TeamUSA.org   </a><li><a href="https://www.flowrestling.org/articles/6744142-jden-cox-wins-2019-john-smith-award-as-freestyle-wrestler-of-the-year" target="_blank">J'den Cox Wins 2019 John Smith Award, as Freestyle Wrestler of the ...    FloWrestling   </a><li><a href="https://www.democratandchronicle.com/in-depth/sports/high-school/agr/2020/04/20/agr-all-greater-rochester-wrestling-division-2-team-winter-2020-section-v-anthony-noto-zoom/5098664002/" target="_blank">Meet the 2020 All-Greater Rochester Division 2 Wrestling Team    Rochester Democrat and Chronicle   </a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling" target="_blank">Freestyle wrestling - Wikipedia    https://en.wikipedia.org › wiki › Freestyle_wrestling   </a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling%23History" target="_blank">History</a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling%23Weight_classes" target="_blank">Weight classes</a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling%23The_match" target="_blank">The match</a><li><a href="https://en.wikipedia.org/wiki/Freestyle_wrestling%23Victory_conditions" target="_blank">Victory conditions</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="MMA"><div class="sidebar_title">MMA</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.mmafighting.com/2020/5/12/21255646/conor-mcgregors-manager-mma-is-the-priority-now-but-boxing-is-definitely-something-he-plans-on-doing" target="_blank">Morning Report: Conor McGregor’s manager says MMA is the priority now, but ‘boxing is definitely something he…    MMA Fighting   </a><li><a href="https://mmajunkie.usatoday.com/2020/05/ufc-249-salaries-tony-ferguson-leads-all-paydays-among-13-fighters-pocketing-six-figures" target="_blank">UFC 249 salaries: Tony Ferguson leads all paydays, among 13 fighters pocketing six figures    MMA Junkie   </a><li><a href="https://www.sportbible.com/ufc/news-justin-gaethjes-mma-career-earnings-revealed-after-win-over-ferguson-20200512" target="_blank">Justin Gaethje’s MMA Career Earnings Revealed After Stunning Win Over Tony Ferguson At UFC 249    SPORTbible   </a><li><a href="https://www.cbssports.com/mma/news/ufc-fight-night-smith-vs-teixeira-odds-predictions-mma-insider-shares-surprising-picks/" target="_blank">UFC Fight Night: Smith vs. Teixeira odds, predictions: MMA insider shares surprising picks    CBSSports.com   </a><li><a href="https://www.mmafighting.com/2020/5/12/21255518/ufc-jacksonville-weigh-in-video" target="_blank">UFC Jacksonville weigh-in video    MMA Fighting   </a><li><a href="http://www.newsminer.com/calendar/mma-ufc-fight-night-smith-vs-teixeira-live-online-watch/event_57019a10-9436-11ea-b464-308d99b27af3.html" target="_blank">MMA UFC Fight Night@ Smith vs Teixeira live online watch    Fairbanks Daily News-Miner   </a><li><a href="https://en.wikipedia.org/wiki/Mixed_martial_arts" target="_blank">Wikipedia</a><li><a href="https://www.mmafighting.com/" target="_blank">MMA Fighting: UFC, Mixed Martial Arts (MMA) News, Results    https://www.mmafighting.com   </a><li><a href="https://www.mmafighting.com/mma-hour" target="_blank">The MMA Hour</a><li><a href="https://www.mmafighting.com/mma-beat" target="_blank">The MMA Beat</a><li><a href="https://www.mmafighting.com/authors/mma-fighting-newswire" target="_blank">MMA Fighting Newswire</a><li><a href="https://www.mmafighting.com/latest-news" target="_blank">Latest News</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Greco-Roman Wrestling"><div class="sidebar_title">Greco-Roman Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.miningjournal.net/sports/2020/05/tops-in-the-nation-former-northern-michigan-university-student-u-s-olympic-education-center%25E2%2580%2588wrestler-max-nowry-named-2019-greco-roman-wrestler-of-the-year/" target="_blank">Tops in the nation: Former Northern Michigan University student ...    Marquette Mining Journal   </a><li><a href="https://napavalleyregister.com/sports/college/usa-wrestling-engel-is-greco-roman-coach-of-the-year/article_270b0432-a06f-5aa3-ab5f-03526b3e87a7.html" target="_blank">USA Wrestling: Engel is Greco-Roman Coach of the Year    Napa Valley Register   </a><li><a href="http://www.fivepointmove.com/usa-greco/greco-roman-baseball-card-stats/" target="_blank">Editorial: Greco-Roman Needs “Baseball Stats”    Five Point Move (press release) (blog)   </a><li><a href="http://fivepointmove.com/christian-faith/lindland-who-center-your-life/" target="_blank">Lindland:    Five Point Move (press release) (blog)   </a><li><a href="https://alkhaleejtoday.co/sport/94386/Athletes-cling-to-their-dreams-on-rooftops.html" target="_blank">Athletes cling to their dreams on rooftops    AlKhaleej Today (press release)   </a><li><a href="http://www.fivepointmove.com/usa-greco/lindland-quotes-folkstyle-disconnect/" target="_blank">10 Lindland Quotes Explaining Folkstyle's Disconnect with Greco ...    Five Point Move (press release) (blog)   </a><li><a href="https://en.wikipedia.org/wiki/Greco-Roman_wrestling" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Greco-Roman_wrestling" target="_blank">Greco-Roman wrestling - Wikipedia    https://en.wikipedia.org › wiki › Greco-Roman_wrestling   </a><li><a href="https://en.wikipedia.org/wiki/List_of_World_and_Olympic_Champions_in_Greco-Roman_wrestling" target="_blank">List of World and Olympic ...</a><li><a href="https://en.wikipedia.org/wiki/Category:Greco-Roman_wrestling" target="_blank">Category:Greco-Roman ...</a><li><a href="https://en.wikipedia.org/wiki/Folk_wrestling" target="_blank">Folk wrestling</a><li><a href="https://www.youtube.com/watch%3Fv%3DcFcRxs07GAg" target="_blank">Greco-Roman wrestling highlights - YouTube    https://www.youtube.com › watch   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Judo"><div class="sidebar_title">Judo</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.channelnewsasia.com/news/sport/south-korea-olympic-judo-star-given-life-ban-over-alleged-sexual-12725122" target="_blank">South Korea Olympic judo star given life ban over alleged sexual ...    CNA   </a><li><a href="https://www.insidethegames.biz/articles/1094181/lebanon-judo-honour-japanese-government" target="_blank">Lebanese Judo Federation President honoured by Japanese ...    Insidethegames.biz (blog)   </a><li><a href="https://www.judoinside.com/news/3989/Judo_in_the_time_of_Covid_19_Yeldos_Smetov" target="_blank">Judo in the time of Covid-19: Yeldos Smetov    Judo Inside   </a><li><a href="https://www.insidethegames.biz/articles/1094111/judo-tokyo-2020-judo-team-olympic-games" target="_blank">Japan Judo Federation to decide to keep Olympic team or new ...    Insidethegames.biz (blog)   </a><li><a href="https://japantoday.com/category/2020-tokyo-olympics/judo-federation-faces-tough-olympic-team-decisions" target="_blank">Judo federation faces tough Olympic team decisions    Japan Today   </a><li><a href="https://www.judoinside.com/news/3388/Is_virtual_Judo_the_next_step_in_corona_time" target="_blank">Is virtual Judo the next step in corona time    Judo Inside   </a><li><a href="https://en.wikipedia.org/wiki/Judo" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Judo" target="_blank">Judo - Wikipedia    https://en.wikipedia.org › wiki › Judo   </a><li><a href="https://en.wikipedia.org/wiki/Judo%23History_and_philosophy" target="_blank">History and philosophy</a><li><a href="https://en.wikipedia.org/wiki/Judo%23Judo_waza_(techniques)" target="_blank">Judo waza (techniques)</a><li><a href="https://en.wikipedia.org/wiki/Judo%23Pedagogy" target="_blank">Pedagogy</a><li><a href="https://en.wikipedia.org/wiki/Judo%23Competitive_judo" target="_blank">Competitive judo</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Sambo Wrestling"><div class="sidebar_title">Sambo Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.sportskeeda.com/mma/can-justin-gaethje-hang-a-loss-on-khabib-nurmagomedov" target="_blank">Can Justin Gaethje hang a loss on Khabib Nurmagomedov    Sportskeeda   </a><li><a href="https://www.essentiallysports.com/ufc-news-reports-khabib-nurmagomedov-hit-by-family-problems-as-father-gets-hospitalized-again/" target="_blank">Khabib Nurmagomedov Hit by Family Problems as Father Gets Hospitalized Again    Essentially Sports (blog)   </a><li><a href="https://thetimeshub.in/cirrus-called-to-fight-a-fighter-of-mat-fight-for-the-laws-of-war-and-the-streets-do-you-know-who-attacked-whom/17659/" target="_blank">Cirrus called to fight a fighter of Mat: “Fight for the laws of war and the streets! Do you know who attacked whom”    The Times Hub   </a><li><a href="https://www.judoinside.com/news/3969/Judo_in_the_time_of_Covid_19_Zebeda_Rekhviashvili" target="_blank">Judo in the time of Covid-19: Zebeda Rekhviashvili    Judo Inside   </a><li><a href="https://www.judoinside.com/news/3989/Judo_in_the_time_of_Covid_19_Yeldos_Smetov" target="_blank">Judo in the time of Covid-19: Yeldos Smetov    Judo Inside   </a><li><a href="https://www.prowrestlingsheet.com/ach-interview-wwe-exit-online-outburst-shirt-nxt/" target="_blank">ACH Speaks on WWE Exit And Online Outburst    Pro Wrestling Sheet (blog)   </a><li><a href="https://en.wikipedia.org/wiki/Sambo_(martial_art)" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Sambo_(martial_art)" target="_blank">Sambo (martial art) - Wikipedia    https://en.wikipedia.org › wiki › Sambo_(martial_art)   </a><li><a href="https://en.wikipedia.org/wiki/Mongolian_wrestling" target="_blank">Mongolian wrestling</a><li><a href="https://en.wikipedia.org/wiki/List_of_Sambo_practitioners" target="_blank">List of Sambo practitioners</a><li><a href="https://en.wikipedia.org/wiki/Vasili_Oshchepkov" target="_blank">Vasili Oshchepkov</a><li><a href="https://en.wikipedia.org/wiki/Kurash" target="_blank">Kurash</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Turkish Oil Wrestling"><div class="sidebar_title">Turkish Oil Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.dailysabah.com/sports/wrestlers-hopeful-covid-19-pandemic-wont-affect-659-year-old-kirkpinar-tradition/news" target="_blank">Wrestlers hopeful COVID-19 pandemic won’t affect 659-year-old K?rkp?nar tradition | Daily Sabah    Daily Sabah   </a><li><a href="https://www.middleeasteye.net/news/coronavirus-turkey-alaattin-cakici-release-outrage" target="_blank">Release of Turkish far-right mob boss sparks outrage from human ...    Middle East Eye   </a><li><a href="https://www.dailysabah.com/arts/events/intangible-cultural-heritage-online-exhibition-kicks-off" target="_blank">'Intangible cultural heritage' online exhibition kicks off | Daily Sabah    Daily Sabah   </a><li><a href="https://www.arabnews.com/node/1673606" target="_blank">Focus: Oil and Aramco    Arab News   </a><li><a href="https://energy.economictimes.indiatimes.com/news/power/turkey-to-start-power-generation-in-huge-tigris-dam-next-week-erdogan-says/75686667" target="_blank">Turkey to start power generation in huge Tigris dam next week, Erdogan says    ETEnergyworld.com   </a><li><a href="https://energy.economictimes.indiatimes.com/news/oil-and-gas/cyprus-turkeys-latest-gas-drilling-proof-of-expansionism/75263014" target="_blank">Cyprus: Turkey's latest gas drilling proof of 'expansionism'    ETEnergyworld.com   </a><li><a href="https://en.wikipedia.org/wiki/Oil_wrestling" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Oil_wrestling" target="_blank">Oil wrestling - Wikipedia    https://en.wikipedia.org › wiki › Oil_wrestling   </a><li><a href="https://www.youtube.com/watch%3Fv%3DxbW_wYskc80" target="_blank">Episode 1: Turkish Oil Wrestling | Helluva Tour (FULL EPISODE ...    https://www.youtube.com › watch   </a><li><a href="https://www.youtube.com/watch%3Fv%3DxbW_wYskc80" target="_blank">    &nbsp;&nbsp;VIDEO</a><li><a href="https://www.youtube.com/watch%3Fv%3DD2keIfaPHgw" target="_blank">Turkish Oil Wrestling - YouTube    https://www.youtube.com › watch   </a><li><a href="https://www.youtube.com/watch%3Fv%3DD2keIfaPHgw" target="_blank">    &nbsp;&nbsp;VIDEO</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Pangration and Pale"><div class="sidebar_title">Pangration and Pale</div></a>
+										<ul class="sidbar_ul"><li><a href="https://bedfordviewedenvalenews.co.za/446167/interesting-facts-about-the-olympics-olympics-history/" target="_blank">Interesting facts about the Olympics and its history    Bedfordview &amp; Edenvale News   </a><li><a href="https://www.ign.com/wikis/assassins-creed-odyssey/Horse_Skins_-_Phobos" target="_blank">Horse Skins - Phobos - Assassin's Creed Odyssey Wiki Guide    IGN   </a><li><a href="https://www.agorasportonline.it/2020/03/20/le-arti-marziali-per-saperne-di-piu-2/" target="_blank">Le arti marziali: per saperne di più. 2    AgoraSportonline   </a><li><a href="https://www.theguardian.com/sport/2016/apr/16/fighters-and-fans-both-must-reconcile-with-mmas-base-brutal-realities" target="_blank">Fighters and fans both must reconcile with MMA's base, brutal realities    The Guardian   </a><li><a href="https://www.standard.co.uk/comment/comment/daisy-dunn-olympics-are-not-for-all-they-re-meant-to-celebrate-excellence-a3318721.html" target="_blank">Daisy Dunn: Olympics are not for all, they’re meant to celebrate excellence    Evening Standard   </a><li><a href="https://bleacherreport.com/articles/2652381-for-brothers-phoenix-jones-and-caros-fodor-long-rivalry-culminates-in-cage" target="_blank">For Brothers Phoenix Jones and Caros Fodor, Long Rivalry Culminates in Cage    Bleacher Report   </a><li><a href="https://en.wikipedia.org/wiki/Pankration" target="_blank">Pankration - Wikipedia    https://en.wikipedia.org › wiki › Pankration   </a><li><a href="https://www.brown.edu/Departments/Joukowsky_Institute/courses/sportancientgreek10/files/11288176.pdf" target="_blank">[PDF] pankration    https://www.brown.edu › courses › sportancientgreek10 › files   </a><li><a href="https://blackbeltmag.com/pankration-boxing-and-wrestling-3-combat-sports-from-ancient-greece" target="_blank">Pankration, Boxing and Wrestling: 3 Combat Sports From Ancient ...    https://blackbeltmag.com › pankration-boxing-and-wrestling-3-combat-spo...   </a><li><a href="http://connectedcontests.org/database/disciplines/211" target="_blank">Discipline Details | Connected Contests    connectedcontests.org › database › disciplines   </a><li><a href="https://www.facebook.com/OfficialJimArv/posts/pankrations-grappling-influences-some-of-ancient-greek-pale-wrestling-was-influe/2422870821092802/" target="_blank">PANKRATION'S GRAPPLING INFLUENCES. Some... - Jim Arvanitis ...    https://www.facebook.com › OfficialJimArv › posts › pankrations-grapplin...   </a><li><a href="https://www.facebook.com/OfficialJimArv/posts/neo-pankrations-orthia-pale-standup-grappling-combined-arm-bar-and-wrist-lock-su/2118511688195385/" target="_blank">Neo-Pankration's Orthia Pale (Standup... - Jim Arvanitis ... - Facebook    https://www.facebook.com › OfficialJimArv › posts › neo-pankrations-orth...   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Irish travellers wrestling"><div class="sidebar_title">Irish travellers wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.irishexaminer.com/breakingnews/sport/lights-camera-action-as-sport-plays-supporting-role-in-movie-magic-994895.html" target="_blank">Lights, camera, action as sport plays supporting role in movie magic    Irish Examiner   </a><li><a href="https://www.southernstar.ie/sport/rosscarbery-legend-celebrates-his-milestone-30th-birthday-4204693" target="_blank">Rosscarbery legend celebrates his milestone 30th birthday    Southern Star Newspaper   </a><li><a href="https://www.irishpost.com/sport/fighting-irish-irelands-best-dominating-world-combat-sport-180615" target="_blank">The Fighting Irish: Ireland's very best are dominating the world of ...    Irish Post   </a><li><a href="https://www.irishmirror.ie/sport/other-sport/boxing/tyson-fury-wwe-full-fight-20765047" target="_blank">Tyson Fury v Braun Strowman LIVE updates from WWE Crown Jewel in Saudi Arabia    Irish Mirror   </a><li><a href="https://talksport.com/sport/wrestling/663972/wrestling-travel-japan/" target="_blank">Wrestling Travel exceed all expectations with inaugural New Japan Wrestle Kingdom trip to break new ground    talkSPORT.com   </a><li><a href="https://sportstar.thehindu.com/boxing/tyson-fury-racism-deontay-wilder-wwe-boxing-wbc/article29962560.ece" target="_blank">Tyson Fury: Racism made me feel an outsider, lost myself in arrogant character    Sportstar   </a><li><a href="https://en.wikipedia.org/wiki/Irish_martial_arts" target="_blank">Irish martial arts - Wikipedia    https://en.wikipedia.org › wiki › Irish_martial_arts   </a><li><a href="https://en.wikipedia.org/wiki/Irish_martial_arts%23Boxing" target="_blank">Boxing</a><li><a href="https://en.wikipedia.org/wiki/Irish_martial_arts%23Wrestling" target="_blank">Wrestling</a><li><a href="https://en.wikipedia.org/wiki/Irish_martial_arts%23Stick_fighting" target="_blank">Stick fighting</a><li><a href="https://en.wikipedia.org/wiki/Irish_Travellers" target="_blank">Irish Travellers - Wikipedia    https://en.wikipedia.org › wiki › Irish_Travellers   </a><li><a href="https://www.buzz.ie/movies-tv/irish-travellers-siberia-amazon-tv-series-318920" target="_blank">Irish Travellers move to Siberia and the Amazon for new series ...    https://www.buzz.ie › movies-tv › irish-travellers-siberia-amazon-tv-series-...   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Kurash Wrestling"><div class="sidebar_title">Kurash Wrestling</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.nst.com.my/sports/others/2019/12/543747/fakhrul-wins-kurash-silver-grateful-he-lost-first-wrestling-match" target="_blank">Fakhrul wins kurash silver, is grateful he lost first wrestling match to ...    New Straits Times Online   </a><li><a href="https://www.timesnownews.com/asian-games-2018-jakarta-palembang/article/asian-games-2018-what-is-kurash-heres-everything-you-need-to-know-about-the-traditional-wrestling-sport/276582" target="_blank">Asian Games 2018: What is Kurash? Here's everything you need to know about the traditional wrestling sport    Times Now   </a><li><a href="https://www.insidethegames.biz/articles/1092577/kurash-competitions-postponed-covid-19" target="_blank">International Kurash Association cancels events due to coronavirus    Insidethegames.biz   </a><li><a href="https://www.therep.co.za/2019/10/09/red-belt-in-kurash-for-southbourne-primary-pupil/" target="_blank">Red belt in Kurash for Southbourne Primary pupil    The Rep (press release)   </a><li><a href="https://www.straitstimes.com/sport/joel-tseng-battles-through-pain-to-win-singapores-first-sea-games-medal-in-kurash" target="_blank">SEA Games: Joel Tseng battles through pain to win Singapore's first ...    The Straits Times   </a><li><a href="https://www.nst.com.my/sports/others/2019/08/515229/martial-arts-sambo-insist-there-grass-roots-development" target="_blank">Martial arts: Sambo insist there is grass roots development    New Straits Times Online   </a><li><a href="https://en.wikipedia.org/wiki/Kurash" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Kurash" target="_blank">Kurash - Wikipedia    https://en.wikipedia.org › wiki › Kurash   </a><li><a href="https://en.wikipedia.org/wiki/Kurash%23Events" target="_blank">Events</a><li><a href="https://en.wikipedia.org/wiki/Kurash%23World_Kurash_Championships" target="_blank">World Kurash ...</a><li><a href="https://en.wikipedia.org/wiki/Kurash%23World_Junior_Kurash_Championships_(U20)" target="_blank">World Junior Kurash ...</a><li><a href="https://en.wikipedia.org/wiki/Kurash%23Kurash_Rules" target="_blank">Kurash Rules</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Lotta Campidanese"><div class="sidebar_title">Lotta Campidanese</div></a>
+										<ul class="sidbar_ul"><li><a href="http://www.italiafruit.net/DettaglioNews/54388/in-evidenza/patate-di-sardegna-buon-inizio" target="_blank">Patate di Sardegna, buon inizio    Italiafruit News   </a><li><a href="https://www.freshplaza.com/article/9194226/melons-and-watermelons-to-be-available-already-in-april/" target="_blank">Melons and watermelons to be available already in April    FreshPlaza.com (press release)   </a><li><a href="https://www.freshplaza.com/article/9201091/artichokes-left-in-the-fields-in-sardinia/" target="_blank">Artichokes left in the fields in Sardinia    FreshPlaza.com (press release)   </a><li><a href="https://www.fruitbookmagazine.it/agricola-campidanese-ottimismo-per-la-campagna-estiva-primizie-al-top/" target="_blank">Agricola Campidanese, ottimismo per la campagna estiva. Primizie ...    Fruitbook Magazine (Comunicati Stampa) (Blog)   </a><li><a href="https://www.fruitbookmagazine.it/corallo-melone-da-oscar-agricola-campidanese/" target="_blank">Corallo, un melone da Oscar. Lotta, Agr. Campidanese: “40 ettari ...    Fruitbook Magazine (Comunicati Stampa) (Blog)   </a><li><a href="http://www.italiafruit.net/DettaglioNews/52970/in-evidenza/agricola-campidanese-avanza-e-prepara-fruit-logistica" target="_blank">Agricola Campidanese avanza e prepara Fruit Logistica    Italiafruit News   </a><li><a href="https://it.wikipedia.org/wiki/Istrumpa" target="_blank">Istrumpa - Wikipedia    https://it.wikipedia.org › wiki › Istrumpa   </a><li><a href="https://it.wikipedia.org/wiki/Istrumpa%23Origini" target="_blank">Origini</a><li><a href="https://it.wikipedia.org/wiki/Istrumpa%23L'Istrumpa_oggi" target="_blank">L'Istrumpa oggi</a><li><a href="https://www.youtube.com/watch%3Fv%3D9kxM6nEMUmc" target="_blank">strumpa - YouTube    https://www.youtube.com › watch   </a><li><a href="https://www.youtube.com/watch%3Fv%3D9kxM6nEMUmc" target="_blank">    &nbsp;&nbsp;VIDEO</a><li><a href="https://www.fruitbookmagazine.it/corallo-melone-da-oscar-agricola-campidanese/" target="_blank">Corallo, un melone da Oscar. Lotta, Agr. Campidanese: “40 ettari ...    https://www.fruitbookmagazine.it › corallo-melone-da-oscar-agricola-camp...   </a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Koshti Pahlavani"><div class="sidebar_title">Koshti Pahlavani</div></a>
+										<ul class="sidbar_ul"><li><a href="http://www.tehrantimes.com/news/419583/Iran-claim-Zurkhaneh-Koshti-Pahlavani-Asian-Championships-title" target="_blank">Iran claim Zurkhaneh &amp; Koshti Pahlavani Asian Championships title    Tehran Times   </a><li><a href="http://www.tehrantimes.com/news/442367/Varzesh-e-Pahlevani-needs-more-support-as-world-s-longest-running" target="_blank">Varzesh-e Pahlevani needs more support as world's longest ...    Tehran Times   </a><li><a href="https://en.mehrnews.com/news/137467/Iran-claimed-title-of-Pahlavani-event-in-3rd-World-Nomad-Games" target="_blank">Iran claimed title of Pahlavani event in 3rd World Nomad Games    Mehr News Agency - English Version   </a><li><a href="https://financialtribune.com/articles/sports/78442/iranians-top-zourkhaneh-championships-in-philippines" target="_blank">Iranians Top Zourkhaneh Championships in Philippines    Financial Tribune   </a><li><a href="https://www.lequipe.fr/Ilosport/Musculation/Actualites/Le-varzesh-e-pahlavani-ancetre-de-la-musculation/878294" target="_blank">Le Varzesh e-pahlavani, ancêtre de la musculation - Musculation    L'Équipe.fr   </a><li><a href="https://sport.mediamax.am/en/news/articles/24488" target="_blank">Wrestling and celebration: Traditional Armenian kokh    Mediamax.am   </a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals" target="_blank">Pahlevani and zoorkhaneh rituals - Wikipedia    https://en.wikipedia.org › wiki › Pahlevani_and_zoorkhaneh_rituals   </a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals%23History" target="_blank">History</a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals%23The_zurkh%25C4%2581neh" target="_blank">The zurkh?neh</a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals%23Rituals_and_practice" target="_blank">Rituals and practice</a><li><a href="https://en.wikipedia.org/wiki/Pahlevani_and_zoorkhaneh_rituals%23International_Zurkh%25C4%2581neh_Sport_Federation" target="_blank">International Zurkh?neh ...</a>
+										</ul>
+									</div>
+								<div class="insidebar_block">
+										<a name="Capoeira"><div class="sidebar_title">Capoeira</div></a>
+										<ul class="sidbar_ul"><li><a href="https://www.mlive.com/news/ann-arbor/2020/04/learn-an-afro-brazilian-martial-art-in-these-virtual-adult-kids-classes.html" target="_blank">Learn an Afro-Brazilian martial art in these virtual adult, kids’ classes    mlive.com   </a><li><a href="https://www.rappler.com/sports/by-sport/other-sports/257896-capoeira-poetry-in-motion" target="_blank">Capoeira: Poetry in motion    Rappler   </a><li><a href="https://registro.portaldacidade.com/noticias/cultura/secretaria-de-cultura-realiza-aula-virtual-de-capoeira-em-registro-5332" target="_blank">Secretaria de Cultura realiza aula virtual de Capoeira em Registro    Adilson Cabral (liberação de imprensa)   </a><li><a href="https://news.abs-cbn.com/life/04/15/20/fil-am-instructor-in-bay-area-offers-free-virtual-capoeira-classes" target="_blank">Fil-Am instructor in Bay Area offers free virtual capoeira classes    ABS-CBN News   </a><li><a href="https://g1.globo.com/pa/para/e-do-para/noticia/2020/05/09/grupo-de-capoeira-da-oportunidades-para-jovens-em-limoeiro-do-ajuru1.ghtml" target="_blank">Grupo de capoeira dá oportunidades para jovens em Limoeiro do Ajuru    G1   </a><li><a href="https://www.ac24horas.com/2020/05/11/professor-de-capoeira-e-ferido-a-golpes-de-faca-e-vai-parar-em-estado-gravissimo-no-ps/" target="_blank">Professor de capoeira é ferido a golpes de faca e vai parar em estado gravíssimo no PS    ac24horas.com   </a><li><a href="https://en.wikipedia.org/wiki/Capoeira" target="_blank">Wikipedia</a><li><a href="https://en.wikipedia.org/wiki/Capoeira" target="_blank">Capoeira - Wikipedia    https://en.wikipedia.org › wiki › Capoeira   </a><li><a href="https://en.wikipedia.org/wiki/List_of_capoeira_techniques" target="_blank">List of capoeira techniques</a><li><a href="https://en.wikipedia.org/wiki/ABAD%25C3%2581-Capoeira" target="_blank">ABADÁ-Capoeira</a><li><a href="https://en.wikipedia.org/wiki/Capoeira_in_popular_culture" target="_blank">Capoeira in popular culture</a><li><a href="https://www.youtube.com/watch%3Fv%3DZ8xxgFpK-NM" target="_blank">The Best Capoeira Video Ever - YouTube    https://www.youtube.com › watch   </a>
+										</ul>
+									</div>							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+			</section>
+		<!--section -->
+		<!--footer -->
+			<footer id="footer">
+				<div class="copyright">
+					<div class="container">
+						<p>Copyright 2020 <a href="http://www.ogwrestlingsystem.com/">OG Wrestling System.</a> Some Rights Reserved.</p>
+					</div>
+				</div>
+			</footer>
+		<!--footer -->
+			
+	</div>
+</body>
+
+
+</html>
+
+
+
+
