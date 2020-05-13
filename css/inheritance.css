@@ -1,0 +1,53 @@
+.ready, .mma, .week, .warmups, .jog, .drink, .smock, .dog, .walking {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.walking {
+  background-color: Silver;
+  text-indent: 0%;
+}
+
+.dog {
+  background-color: Gray;
+  text-indent: 5%;
+}
+
+.smock {
+  background-color: Olive;
+  text-indent: 10%;
+}
+
+.drink {
+  background-color: Green;
+  text-indent: 15%;
+}
+
+.jog {
+  background-color: Aqua;
+  text-indent: 20%;
+}
+
+.warmups {
+  background-color: Teal;
+  text-indent: 25%;
+}
+
+.week {
+  background-color: Blue;
+  text-indent: 30%;
+}
+
+.mma {
+  background-color: Fuchsia;
+  text-indent: 35%;
+}
+
+.ready {
+  background-color: red;
+  text-indent: 40%;
+}

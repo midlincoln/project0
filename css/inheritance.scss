@@ -1,0 +1,66 @@
+
+%message {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.walking {
+    @extend %message;
+    background-color: Silver;
+    text-indent: 0%;
+    
+}
+
+.dog {
+    @extend %message;
+    background-color: Gray;
+      text-indent: 5%;
+ 
+}
+
+.smock {
+    @extend %message;
+    background-color: Olive;
+      text-indent: 10%;
+      
+    
+}
+
+.drink {
+    @extend %message;
+    background-color: Green;
+    text-indent: 15%;
+}
+.jog {
+    @extend %message;
+    background-color: Aqua;
+    text-indent: 20%;
+}
+.warmups {
+    @extend %message;
+    background-color: Teal;
+    text-indent: 25%;
+}
+
+.week {
+    @extend %message;
+    background-color: Blue;
+    text-indent: 30%;
+}
+.mma {
+    @extend %message;
+    background-color: Fuchsia;
+    text-indent: 35%;
+}
+.ready {
+    @extend %message;
+    background-color: red;
+    text-indent: 40%;
+}
+
+
